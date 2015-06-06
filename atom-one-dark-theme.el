@@ -22,6 +22,7 @@
   '(cursor ((t (:background "#8599FF" ))))
   '(fringe ((t (:background "#31343F" ))))
   '(region ((t (:background "#504945" ))))
+  '(highlight ((t (:background "#484b5b"))))
   '(secondary-selection ((t (:background "#262626" ))))
 
   '(font-lock-builtin-face ((t (:foreground "#56b6c2" ))))
