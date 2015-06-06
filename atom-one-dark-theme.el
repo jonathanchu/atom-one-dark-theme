@@ -24,12 +24,17 @@
   '(region ((t (:background "#504945" ))))
   '(highlight ((t (:background "#484b5b"))))
   '(secondary-selection ((t (:background "#262626" ))))
+  '(query-replace ((t (:inherit (isearch)))))
+  '(minibuffer-prompt ((t (:foreground "#FF8000"))))
+  '(region ((t (:background "grey70"))))
 
   '(font-lock-builtin-face ((t (:foreground "#56b6c2" ))))
   '(font-lock-comment-face ((t (:foreground "#5C6370" ))))
   '(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
+  '(font-lock-doc-face ((t (:inherit (font-lock-string-face)))))
   '(font-lock-function-name-face ((t (:foreground "#61afef" ))))
   '(font-lock-keyword-face ((t (:foreground "#c678dd" ))))
+  '(font-lock-preprocessor-face ((t (:foreground "#8996A8"))))
   '(font-lock-string-face ((t (:foreground "#98c379" ))))
   '(font-lock-type-face ((t (:foreground "#CFCB90" ))))
   '(font-lock-constant-face ((t (:foreground "#d19a66" ))))
@@ -40,6 +45,20 @@
   '(mode-line ((t (:background "#21252B" :foreground "#96CBFE"))))
   '(mode-line-buffer-id ((t (:weight bold))))
   '(mode-line-emphasis ((t (:weight bold))))
+
+  ;; isearch
+  '(isearch ((((class color) (min-colors 88) (background light)) (:foreground "lightskyblue1" :background "magenta3")) (((class color) (min-colors 88) (background dark)) (:foreground "brown4" :background "palevioletred2")) (((class color) (min-colors 16)) (:foreground "cyan1" :background "magenta4")) (((class color) (min-colors 8)) (:foreground "cyan1" :background "magenta4")) (t (:inverse-video t))))
+  '(isearch-fail ((((class color) (min-colors 88) (background light)) (:background "RosyBrown1")) (((class color) (min-colors 88) (background dark)) (:background "red4")) (((class color) (min-colors 16)) (:background "red")) (((class color) (min-colors 8)) (:background "red")) (((class color grayscale)) (:foreground "grey")) (t (:inverse-video t))))
+
+  ;; diff-hl (https://github.com/dgutov/diff-hl)
+  '(diff-hl-change ((t (:foreground "#E9C062" :background "#8b733a"))))
+  '(diff-hl-delete ((t (:foreground "#CC6666" :background "#7a3d3d"))))
+  '(diff-hl-insert ((t (:foreground "#A8FF60" :background "#547f30"))))
+
+  ;; dired-mode
+  '(dired-directory ((t (:inherit (font-lock-keyword-face)))))
+  '(dired-flagged ((t (:inherit (diff-hl-delete)))))
+  '(dired-symlink ((t (:foreground "#FD5FF1"))))
   )
 
 ;;;###autoload
