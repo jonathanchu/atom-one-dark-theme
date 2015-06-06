@@ -33,7 +33,6 @@
   '(font-lock-type-face ((t (:foreground "#CFCB90" ))))
   '(font-lock-constant-face ((t (:foreground "#d19a66" ))))
   '(font-lock-variable-name-face ((t (:foreground "#e5c07b" ))))
-;;  '(minibuffer-prompt ((t (:foreground "#b8bb26" :bold t ))))
   '(font-lock-warning-face ((t (:foreground "#ff982d" :bold t ))))
 
   ;; mode-line
