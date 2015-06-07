@@ -70,6 +70,9 @@
   '(dired-directory ((t (:inherit (font-lock-keyword-face)))))
   '(dired-flagged ((t (:inherit (diff-hl-delete)))))
   '(dired-symlink ((t (:foreground "#FD5FF1"))))
+
+  ;; flx-ido
+  '(flx-highlight-face ((t (:inherit (link) :weight bold))))
   )
 
 ;;;###autoload
