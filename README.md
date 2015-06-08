@@ -1,3 +1,5 @@
+[![MELPA](http://melpa.org/packages/atom-one-dark-theme-badge.svg)](http://melpa.org/#/atom-one-dark-theme)
+
 # Atom One Dark Theme for Emacs
 
 This is a port of the Atom One Dark theme from
@@ -14,7 +16,11 @@ popular modes. Pull requests are extremely welcomed! :)
 
 ### From Packages (MELPA)
 
-TODO
+There are a number of ways to do this, but I like to do:
+
+* <kbd>m-x list-packages</kbd>
+* Find `atom-one-dark-theme` in the list (to verify source and version)
+* While cursor is on the package line, press <kbd>i</kbd>, then <kbd>x</kbd>
 
 ### Manual
 
