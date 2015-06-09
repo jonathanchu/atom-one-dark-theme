@@ -45,6 +45,7 @@
   '(mode-line ((t (:background "#21252B" :foreground "#96CBFE"))))
   '(mode-line-buffer-id ((t (:weight bold))))
   '(mode-line-emphasis ((t (:weight bold))))
+  '(mode-line-inactive ((t (:background "#4b4c4d"))))
 
   ;; isearch
   '(isearch (
