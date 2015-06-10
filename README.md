@@ -16,11 +16,10 @@ popular modes. Pull requests are extremely welcomed! :)
 
 ### From Packages (MELPA)
 
-There are a number of ways to do this, but I like to do:
+Make sure you have enabled the [MELPA](http://melpa.org/) package
+archive in your Emacs configuration.
 
-* <kbd>m-x list-packages</kbd>
-* Find `atom-one-dark-theme` in the list (to verify source and version)
-* While cursor is on the package line, press <kbd>i</kbd>, then <kbd>x</kbd>
+<kbd>m-x</kbd> `package-install` <kbd>RET</kbd> `atom-one-dark-theme`
 
 ### Manual
 
