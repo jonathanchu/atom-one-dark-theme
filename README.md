@@ -23,17 +23,29 @@ archive in your Emacs configuration.
 
 ### Manual
 
-## Configuration
+First, clone this repo:
 
-```elisp
-(load-theme 'atom-one-dark t)
+```console
+$ git clone https://github.com/jonathanchu/atom-one-dark-theme.git
 ```
 
-If you installed manually you'll need to include this theme and add to
-the custom theme load path:
+Then, add this to your Emacs config:
 
 ```elisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/path/to/atom-one-dark-theme/
+```
+
+## Configuration
+
+Load the theme with:
+
+<kbd>load-theme</kbd> `atom-one-dark`
+
+To load this theme on Emacs startup and make it the default, add this
+to your Emacs config:
+
+```elisp
+(load-theme 'atom-one-dark t)
 ```
 
 ## Screenshots
