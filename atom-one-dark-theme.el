@@ -19,7 +19,7 @@
   'atom-one-dark
 
   '(default ((t (:foreground "#abb2bf" :background "#31343F" ))))
-  '(cursor ((t (:background "#8599FF" ))))
+  '(cursor ((t (:background "#528BFF" ))))
   '(fringe ((t (:background "#31343F" ))))
   '(region ((t (:background "#504945" ))))
   '(highlight ((t (:background "#484b5b"))))
