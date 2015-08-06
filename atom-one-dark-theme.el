@@ -71,11 +71,9 @@
    '(font-lock-warning-face ((t (:foreground "#ff982d" :bold t))))
 
    ;; mode-line
-   ;; '(mode-line ((t (:background "#21252B" :foreground "#96CBFE"))))
    `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
-   ;; '(mode-line-inactive ((t (:background "#4b4c4d"))))
    `(mode-line-inactive ((t (:background ,atom-one-dark-gray))))
 
    ;; isearch
