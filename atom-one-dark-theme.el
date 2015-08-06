@@ -32,7 +32,8 @@
     ("atom-one-dark-orange-1" . "#D19A66")
     ("atom-one-dark-orange-2" . "#E5C07B")
     ("atom-one-dark-gray" . "#3E4451")
-    ("atom-one-dark-silver" . "#AAAAAA"))
+    ("atom-one-dark-silver" . "#AAAAAA")
+    ("atom-one-dark-black" . "#0F1011"))
   "List of Atom One Dark colors")
 
 (defmacro atom-one-dark-with-color-variables (&rest body)
@@ -54,7 +55,7 @@
    `(highlight ((t (:background ,atom-one-dark-gray))))
    `(secondary-selection ((t (:background ,atom-one-dark-bg-1))))
    `(query-replace ((t (:inherit (isearch)))))
-   '(minibuffer-prompt ((t (:foreground "#FF8000"))))
+   `(minibuffer-prompt ((t (:foreground ,atom-one-dark-silver))))
 
    `(font-lock-builtin-face ((t (:foreground ,atom-one-dark-cyan))))
    `(font-lock-comment-face ((t (:foreground ,atom-one-dark-orange-2))))
@@ -70,10 +71,12 @@
    '(font-lock-warning-face ((t (:foreground "#ff982d" :bold t))))
 
    ;; mode-line
-   '(mode-line ((t (:background "#21252B" :foreground "#96CBFE"))))
-   '(mode-line-buffer-id ((t (:weight bold))))
-   '(mode-line-emphasis ((t (:weight bold))))
-   '(mode-line-inactive ((t (:background "#4b4c4d"))))
+   ;; '(mode-line ((t (:background "#21252B" :foreground "#96CBFE"))))
+   `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver))))
+   `(mode-line-buffer-id ((t (:weight bold))))
+   `(mode-line-emphasis ((t (:weight bold))))
+   ;; '(mode-line-inactive ((t (:background "#4b4c4d"))))
+   `(mode-line-inactive ((t (:background ,atom-one-dark-gray))))
 
    ;; isearch
    '(isearch (
