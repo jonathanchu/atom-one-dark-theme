@@ -68,7 +68,7 @@
    '(font-lock-type-face ((t (:foreground "#CFCB90"))))
    `(font-lock-constant-face ((t (:foreground ,atom-one-dark-orange-1))))
    `(font-lock-variable-name-face ((t (:foreground ,atom-one-dark-red-1))))
-   '(font-lock-warning-face ((t (:foreground "#ff982d" :bold t))))
+   `(font-lock-warning-face ((t (:foreground ,atom-one-dark-mono-3 :bold t))))
 
    ;; mode-line
    `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver))))
