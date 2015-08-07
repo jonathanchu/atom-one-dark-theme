@@ -65,7 +65,7 @@
    `(font-lock-keyword-face ((t (:foreground ,atom-one-dark-purple))))
    `(font-lock-preprocessor-face ((t (:foreground ,atom-one-dark-mono-2))))
    `(font-lock-string-face ((t (:foreground ,atom-one-dark-green))))
-   '(font-lock-type-face ((t (:foreground "#CFCB90"))))
+   `(font-lock-type-face ((t (:foreground ,atom-one-dark-orange-2))))
    `(font-lock-constant-face ((t (:foreground ,atom-one-dark-orange-1))))
    `(font-lock-variable-name-face ((t (:foreground ,atom-one-dark-red-1))))
    `(font-lock-warning-face ((t (:foreground ,atom-one-dark-mono-3 :bold t))))
