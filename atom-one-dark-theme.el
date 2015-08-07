@@ -58,7 +58,7 @@
    `(minibuffer-prompt ((t (:foreground ,atom-one-dark-silver))))
 
    `(font-lock-builtin-face ((t (:foreground ,atom-one-dark-cyan))))
-   `(font-lock-comment-face ((t (:foreground ,atom-one-dark-orange-2))))
+   `(font-lock-comment-face ((t (:foreground ,atom-one-dark-mono-3))))
    `(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
    `(font-lock-doc-face ((t (:inherit (font-lock-string-face)))))
    `(font-lock-function-name-face ((t (:foreground ,atom-one-dark-blue))))
