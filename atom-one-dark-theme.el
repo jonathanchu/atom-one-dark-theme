@@ -4,7 +4,7 @@
 ;;
 ;; Author: Jonathan Chu <me@jonathanchu.is>
 ;; URL: https://github.com/jonathanchu/atom-one-dark-theme
-;; Version: 0.3.0
+;; Version: 0.3.1
 ;;
 ;;; Commentary:
 ;;
