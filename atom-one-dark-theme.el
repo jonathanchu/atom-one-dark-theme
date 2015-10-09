@@ -116,4 +116,7 @@
 
 (provide-theme 'atom-one-dark)
 
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
 ;;; atom-one-dark-theme.el ends here
