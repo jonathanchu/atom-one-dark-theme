@@ -6,11 +6,11 @@
 ;; URL: https://github.com/jonathanchu/atom-one-dark-theme
 ;; Version: 0.3.0
 ;;
-;;; Commentary
+;;; Commentary:
 ;;
 ;; An Emacs port of the Atom One Dark theme from Atom.io.
 ;;
-;;; Code
+;;; Code:
 
 (deftheme atom-one-dark
   "Atom One Dark - An Emacs port of the Atom One Dark theme from Atom.io.")
@@ -34,9 +34,10 @@
     ("atom-one-dark-gray"     . "#3E4451")
     ("atom-one-dark-silver"   . "#AAAAAA")
     ("atom-one-dark-black"    . "#0F1011"))
-  "List of Atom One Dark colors")
+  "List of Atom One Dark colors.")
 
 (defmacro atom-one-dark-with-color-variables (&rest body)
+  "Bind the colors list around BODY."
   (declare (indent 0))
   `(let ((class '((class color) (min-colors 89)))
          ,@ (mapcar (lambda (cons)
