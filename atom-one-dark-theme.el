@@ -158,6 +158,13 @@
    `(rainbow-delimiters-depth-12-face ((t (:foreground ,atom-one-dark-mono-3))))
    `(rainbow-delimiters-unmatched-face ((t (:foreground ,atom-one-dark-black))))
 
+   ;; smartparens
+   `(sp-show-pair-mismatch-face ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-gray :weight bold))))
+   `(sp-show-pair-match-face ((t (:background ,atom-one-dark-gray :weight bold))))
+
+   ;; web-mode
+   `(web-mode-symbol-face ((t (:foreground ,atom-one-dark-orange-1))))
+
    ;; flx-ido
    '(flx-highlight-face ((t (:inherit (link) :weight bold))))
    ))
