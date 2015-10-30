@@ -158,6 +158,9 @@
    `(rainbow-delimiters-depth-12-face ((t (:foreground ,atom-one-dark-mono-3))))
    `(rainbow-delimiters-unmatched-face ((t (:foreground ,atom-one-dark-black))))
 
+   ;; rbenv
+   `(rbenv-active-ruby-face ((t (:foreground ,atom-one-dark-green))))
+
    ;; smartparens
    `(sp-show-pair-mismatch-face ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-gray :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,atom-one-dark-gray :weight bold))))
