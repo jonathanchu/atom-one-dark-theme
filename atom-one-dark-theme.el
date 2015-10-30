@@ -102,6 +102,47 @@
    '(dired-flagged ((t (:inherit (diff-hl-delete)))))
    '(dired-symlink ((t (:foreground "#FD5FF1"))))
 
+   ;; helm
+   `(helm-header ((t (:foreground ,atom-one-dark-mono-2
+                      :background ,atom-one-dark-bg
+                      :underline nil
+                      :box (:line-width 6 :color ,atom-one-dark-bg)))))
+   `(helm-source-header ((t (:foreground ,atom-one-dark-orange-2
+                             :background ,atom-one-dark-bg
+                             :underline nil
+                             :weight bold
+                             :box (:line-width 6 :color ,atom-one-dark-bg)))))
+   `(helm-selection ((t (:background ,atom-one-dark-gray))))
+   `(helm-selection-line ((t (:background ,atom-one-dark-gray))))
+   `(helm-visible-mark ((t (:foreground ,atom-one-dark-bg :foreground ,atom-one-dark-orange-2))))
+   `(helm-candidate-number ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-bg-1))))
+   `(helm-separator ((t (:background ,atom-one-dark-bg :foreground ,atom-one-dark-red-1))))
+   `(helm-M-x-key ((t (:foreground ,atom-one-dark-orange-1))))
+   `(helm-bookmark-addressbook ((t (:foreground ,atom-one-dark-orange-1))))
+   `(helm-bookmark-directory ((t (:foreground nil :background nil :inherit helm-ff-directory))))
+   `(helm-bookmark-file ((t (:foreground nil :background nil :inherit helm-ff-file))))
+   `(helm-bookmark-gnus ((t (:foreground ,atom-one-dark-purple))))
+   `(helm-bookmark-info ((t (:foreground ,atom-one-dark-green))))
+   `(helm-bookmark-man ((t (:foreground ,atom-one-dark-orange-2))))
+   `(helm-bookmark-w3m ((t (:foreground ,atom-one-dark-purple))))
+   `(helm-match ((t (:foreground ,atom-one-dark-orange-2))))
+   `(helm-ff-directory ((t (:foreground ,atom-one-dark-cyan :background ,atom-one-dark-bg :weight bold))))
+   `(helm-ff-file ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg :weight normal))))
+   `(helm-ff-executable ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-bg :weight normal))))
+   `(helm-ff-invalid-symlink ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-bg :weight bold))))
+   `(helm-ff-symlink ((t (:foreground ,atom-one-dark-orange-2 :background ,atom-one-dark-bg :weight bold))))
+   `(helm-ff-prefix ((t (:foreground ,atom-one-dark-bg :background ,atom-one-dark-orange-2 :weight normal))))
+   `(helm-buffer-not-saved ((t (:foreground ,atom-one-dark-red-1))))
+   `(helm-buffer-process ((t (:foreground ,atom-one-dark-mono-2))))
+   `(helm-buffer-saved-out ((t (:foreground ,atom-one-dark-fg))))
+   `(helm-buffer-size ((t (:foreground ,atom-one-dark-mono-2))))
+   `(helm-grep-cmd-line ((t (:foreground ,atom-one-dark-cyan))))
+   `(helm-grep-file ((t (:foreground ,atom-one-dark-fg))))
+   `(helm-grep-finish ((t (:foreground ,atom-one-dark-green))))
+   `(helm-grep-lineno ((t (:foreground ,atom-one-dark-mono-2))))
+   `(helm-grep-finish ((t (:foreground ,atom-one-dark-red-1))))
+   `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
+
    ;; flx-ido
    '(flx-highlight-face ((t (:inherit (link) :weight bold))))
    ))
