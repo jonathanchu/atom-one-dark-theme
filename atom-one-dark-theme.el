@@ -143,6 +143,21 @@
    `(helm-grep-finish ((t (:foreground ,atom-one-dark-red-1))))
    `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
 
+   ;; rainbow-delimiters
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,atom-one-dark-fg))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,atom-one-dark-purple))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,atom-one-dark-blue))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground ,atom-one-dark-cyan))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,atom-one-dark-green))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,atom-one-dark-orange-1))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground ,atom-one-dark-orange-2))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground ,atom-one-dark-red-1))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground ,atom-one-dark-red-2))))
+   `(rainbow-delimiters-depth-10-face ((t (:foreground ,atom-one-dark-mono-1))))
+   `(rainbow-delimiters-depth-11-face ((t (:foreground ,atom-one-dark-mono-2))))
+   `(rainbow-delimiters-depth-12-face ((t (:foreground ,atom-one-dark-mono-3))))
+   `(rainbow-delimiters-unmatched-face ((t (:foreground ,atom-one-dark-black))))
+
    ;; flx-ido
    '(flx-highlight-face ((t (:inherit (link) :weight bold))))
    ))
