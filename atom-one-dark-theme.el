@@ -104,6 +104,72 @@
    '(dired-flagged ((t (:inherit (diff-hl-delete)))))
    '(dired-symlink ((t (:foreground "#FD5FF1"))))
 
+   ;; helm
+   `(helm-header ((t (:foreground ,atom-one-dark-mono-2
+                      :background ,atom-one-dark-bg
+                      :underline nil
+                      :box (:line-width 6 :color ,atom-one-dark-bg)))))
+   `(helm-source-header ((t (:foreground ,atom-one-dark-orange-2
+                             :background ,atom-one-dark-bg
+                             :underline nil
+                             :weight bold
+                             :box (:line-width 6 :color ,atom-one-dark-bg)))))
+   `(helm-selection ((t (:background ,atom-one-dark-gray))))
+   `(helm-selection-line ((t (:background ,atom-one-dark-gray))))
+   `(helm-visible-mark ((t (:foreground ,atom-one-dark-bg :foreground ,atom-one-dark-orange-2))))
+   `(helm-candidate-number ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-bg-1))))
+   `(helm-separator ((t (:background ,atom-one-dark-bg :foreground ,atom-one-dark-red-1))))
+   `(helm-M-x-key ((t (:foreground ,atom-one-dark-orange-1))))
+   `(helm-bookmark-addressbook ((t (:foreground ,atom-one-dark-orange-1))))
+   `(helm-bookmark-directory ((t (:foreground nil :background nil :inherit helm-ff-directory))))
+   `(helm-bookmark-file ((t (:foreground nil :background nil :inherit helm-ff-file))))
+   `(helm-bookmark-gnus ((t (:foreground ,atom-one-dark-purple))))
+   `(helm-bookmark-info ((t (:foreground ,atom-one-dark-green))))
+   `(helm-bookmark-man ((t (:foreground ,atom-one-dark-orange-2))))
+   `(helm-bookmark-w3m ((t (:foreground ,atom-one-dark-purple))))
+   `(helm-match ((t (:foreground ,atom-one-dark-orange-2))))
+   `(helm-ff-directory ((t (:foreground ,atom-one-dark-cyan :background ,atom-one-dark-bg :weight bold))))
+   `(helm-ff-file ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg :weight normal))))
+   `(helm-ff-executable ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-bg :weight normal))))
+   `(helm-ff-invalid-symlink ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-bg :weight bold))))
+   `(helm-ff-symlink ((t (:foreground ,atom-one-dark-orange-2 :background ,atom-one-dark-bg :weight bold))))
+   `(helm-ff-prefix ((t (:foreground ,atom-one-dark-bg :background ,atom-one-dark-orange-2 :weight normal))))
+   `(helm-buffer-not-saved ((t (:foreground ,atom-one-dark-red-1))))
+   `(helm-buffer-process ((t (:foreground ,atom-one-dark-mono-2))))
+   `(helm-buffer-saved-out ((t (:foreground ,atom-one-dark-fg))))
+   `(helm-buffer-size ((t (:foreground ,atom-one-dark-mono-2))))
+   `(helm-grep-cmd-line ((t (:foreground ,atom-one-dark-cyan))))
+   `(helm-grep-file ((t (:foreground ,atom-one-dark-fg))))
+   `(helm-grep-finish ((t (:foreground ,atom-one-dark-green))))
+   `(helm-grep-lineno ((t (:foreground ,atom-one-dark-mono-2))))
+   `(helm-grep-finish ((t (:foreground ,atom-one-dark-red-1))))
+   `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
+
+   ;; rainbow-delimiters
+   `(rainbow-delimiters-depth-1-face ((t (:foreground ,atom-one-dark-fg))))
+   `(rainbow-delimiters-depth-2-face ((t (:foreground ,atom-one-dark-purple))))
+   `(rainbow-delimiters-depth-3-face ((t (:foreground ,atom-one-dark-blue))))
+   `(rainbow-delimiters-depth-4-face ((t (:foreground ,atom-one-dark-cyan))))
+   `(rainbow-delimiters-depth-5-face ((t (:foreground ,atom-one-dark-green))))
+   `(rainbow-delimiters-depth-6-face ((t (:foreground ,atom-one-dark-orange-1))))
+   `(rainbow-delimiters-depth-7-face ((t (:foreground ,atom-one-dark-orange-2))))
+   `(rainbow-delimiters-depth-8-face ((t (:foreground ,atom-one-dark-red-1))))
+   `(rainbow-delimiters-depth-9-face ((t (:foreground ,atom-one-dark-red-2))))
+   `(rainbow-delimiters-depth-10-face ((t (:foreground ,atom-one-dark-mono-1))))
+   `(rainbow-delimiters-depth-11-face ((t (:foreground ,atom-one-dark-mono-2))))
+   `(rainbow-delimiters-depth-12-face ((t (:foreground ,atom-one-dark-mono-3))))
+   `(rainbow-delimiters-unmatched-face ((t (:foreground ,atom-one-dark-black))))
+
+   ;; rbenv
+   `(rbenv-active-ruby-face ((t (:foreground ,atom-one-dark-green))))
+
+   ;; smartparens
+   `(sp-show-pair-mismatch-face ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-gray :weight bold))))
+   `(sp-show-pair-match-face ((t (:background ,atom-one-dark-gray :weight bold))))
+
+   ;; web-mode
+   `(web-mode-symbol-face ((t (:foreground ,atom-one-dark-orange-1))))
+
    ;; flx-ido
    '(flx-highlight-face ((t (:inherit (link) :weight bold))))
    ))
