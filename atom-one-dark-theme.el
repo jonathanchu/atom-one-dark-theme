@@ -85,6 +85,11 @@
    `(mode-line-emphasis ((t (:weight bold))))
    `(mode-line-inactive ((t (:background ,atom-one-dark-gray))))
 
+   ;; compilation
+   `(compilation-face ((t (:foreground ,atom-one-dark-fg))))
+   `(compilation-line-number ((t (:foreground ,atom-one-dark-mono-2))))
+   `(compilation-column-number ((t (:foreground ,atom-one-dark-mono-2))))
+
    ;; isearch
    `(isearch ((t (:foreground ,atom-one-dark-bg :background ,atom-one-dark-purple))))
    `(isearch-fail ((t (:foreground ,atom-one-dark-red-2 :background nil))))
