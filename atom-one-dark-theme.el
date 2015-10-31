@@ -85,6 +85,10 @@
    `(mode-line-emphasis ((t (:weight bold))))
    `(mode-line-inactive ((t (:background ,atom-one-dark-gray))))
 
+   ;; ace-jump
+   `(ace-jump-face-background ((t (:foreground ,atom-one-dark-mono-3 :background ,atom-one-dark-bg-1 :inverse-video nil))))
+   `(ace-jump-face-foreground ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-bg-1 :inverse-video nil))))
+
    ;; company-mode
    `(company-tooltip ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg-1))))
    `(company-tooltip-annotation ((t (:foreground ,atom-one-dark-mono-2 :background ,atom-one-dark-bg-1))))
