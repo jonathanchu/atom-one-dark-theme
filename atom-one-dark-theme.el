@@ -51,11 +51,17 @@
    'atom-one-dark
 
    `(default ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg))))
+   `(success ((t (:foreground ,atom-one-dark-green))))
+   `(warning ((t (:foreground ,atom-one-dark-orange-2))))
+   `(error ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
+   `(link ((t (:foreground ,atom-one-dark-blue :underline t :weight bold))))
+   `(link-visited ((t (:foreground ,atom-one-dark-blue :underline t :weight normal))))
    `(cursor ((t (:background ,atom-one-dark-accent))))
    `(fringe ((t (:background ,atom-one-dark-bg))))
    `(region ((t (:background ,atom-one-dark-gray))))
    `(highlight ((t (:background ,atom-one-dark-gray))))
    `(hl-line ((t (:background ,atom-one-dark-bg-hl))))
+   `(vertical-border ((t (:foreground ,atom-one-dark-mono-3))))
    `(secondary-selection ((t (:background ,atom-one-dark-bg-1))))
    `(query-replace ((t (:inherit (isearch)))))
    `(minibuffer-prompt ((t (:foreground ,atom-one-dark-silver))))
