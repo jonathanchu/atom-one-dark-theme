@@ -85,6 +85,16 @@
    `(mode-line-emphasis ((t (:weight bold))))
    `(mode-line-inactive ((t (:background ,atom-one-dark-gray))))
 
+   ;; company-mode
+   `(company-tooltip ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg-1))))
+   `(company-tooltip-annotation ((t (:foreground ,atom-one-dark-mono-2 :background ,atom-one-dark-bg-1))))
+   `(company-tooltip-selection ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-gray))))
+   `(company-tooltip-mouse ((t (:background ,atom-one-dark-gray))))
+   `(company-tooltip-common ((t (:foreground ,atom-one-dark-orange-2 :background ,atom-one-dark-bg-1))))
+   `(company-tooltip-common-selection ((t (:foreground ,atom-one-dark-orange-2 :background ,atom-one-dark-gray))))
+   `(company-scrollbar-fg ((t (:background ,atom-one-dark-mono-1))))
+   `(company-scrollbar-bg ((t (:background ,atom-one-dark-bg-1))))
+
    ;; compilation
    `(compilation-face ((t (:foreground ,atom-one-dark-fg))))
    `(compilation-line-number ((t (:foreground ,atom-one-dark-mono-2))))
