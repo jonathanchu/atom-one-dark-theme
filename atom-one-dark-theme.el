@@ -153,6 +153,7 @@
    `(helm-buffer-process ((t (:foreground ,atom-one-dark-mono-2))))
    `(helm-buffer-saved-out ((t (:foreground ,atom-one-dark-fg))))
    `(helm-buffer-size ((t (:foreground ,atom-one-dark-mono-2))))
+   `(helm-buffer-directory ((t (:foreground ,atom-one-dark-purple))))
    `(helm-grep-cmd-line ((t (:foreground ,atom-one-dark-cyan))))
    `(helm-grep-file ((t (:foreground ,atom-one-dark-fg))))
    `(helm-grep-finish ((t (:foreground ,atom-one-dark-green))))
