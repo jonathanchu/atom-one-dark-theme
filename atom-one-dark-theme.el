@@ -84,6 +84,12 @@
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
    `(mode-line-inactive ((t (:background ,atom-one-dark-gray))))
+   
+    ;; ido
+   `(ido-first-match ((t (:foreground ,atom-one-dark-purple :weight bold))))
+   `(ido-only-match ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
+   `(ido-subdir ((t (:foreground ,atom-one-dark-blue))))
+   `(ido-virtual ((t (:foreground ,atom-one-dark-mono-3))))
 
    ;; ace-jump
    `(ace-jump-face-background ((t (:foreground ,atom-one-dark-mono-3 :background ,atom-one-dark-bg-1 :inverse-video nil))))
