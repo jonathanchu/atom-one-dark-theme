@@ -32,7 +32,7 @@ $ git clone https://github.com/jonathanchu/atom-one-dark-theme.git
 Then, add this to your Emacs config:
 
 ```elisp
-(add-to-list 'custom-theme-load-path "~/.emacs.d/path/to/atom-one-dark-theme/
+(add-to-list 'custom-theme-load-path "~/.emacs.d/path/to/atom-one-dark-theme/")
 ```
 
 ## Configuration
