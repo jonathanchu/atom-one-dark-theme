@@ -260,6 +260,9 @@
 
    ;; flx-ido
    '(flx-highlight-face ((t (:inherit (link) :weight bold))))
+
+   ;; show-paren-mode
+   `(show-paren-match ((t (:background ,atom-one-dark-bg-hl))))
    ))
 
 ;;;###autoload
