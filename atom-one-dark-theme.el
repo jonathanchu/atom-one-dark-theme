@@ -260,6 +260,16 @@
 
    ;; flx-ido
    '(flx-highlight-face ((t (:inherit (link) :weight bold))))
+
+   ;; term
+   `(term-color-black ((t :foreground ,atom-one-dark-mono-1)))
+   `(term-color-blue ((t (:foreground ,atom-one-dark-blue))))
+   `(term-color-cyan ((t :foreground ,atom-one-dark-cyan)))
+   `(term-color-green ((t (:foreground ,atom-one-dark-green))))
+   `(term-color-magenta ((t :foreground ,atom-one-dark-purple)))
+   `(term-color-red ((t :foreground ,atom-one-dark-red-1)))
+   `(term-color-white ((t :foreground ,atom-one-dark-fg)))
+   `(term-color-yellow ((t (:foreground ,atom-one-dark-orange-1))))
    ))
 
 ;;;###autoload
