@@ -1,4 +1,5 @@
 [![MELPA](http://melpa.org/packages/atom-one-dark-theme-badge.svg)](http://melpa.org/#/atom-one-dark-theme)
+[![MELPA Stable](http://stable.melpa.org/packages/atom-one-dark-theme-badge.svg)](http://stable.melpa.org/#/atom-one-dark-theme)
 
 # Atom One Dark Theme for Emacs
 
