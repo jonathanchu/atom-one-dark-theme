@@ -1,6 +1,6 @@
 ;;; atom-one-dark-theme.el --- Atom One Dark color theme
 ;;
-;; Copyright 2015 Jonathan Chu
+;; Copyright 2016 Jonathan Chu
 ;;
 ;; Author: Jonathan Chu <me@jonathanchu.is>
 ;; URL: https://github.com/jonathanchu/atom-one-dark-theme
