@@ -259,7 +259,7 @@
    `(web-mode-symbol-face ((t (:foreground ,atom-one-dark-orange-1))))
 
    ;; flx-ido
-   '(flx-highlight-face ((t (:inherit (link) :weight bold))))
+   `(flx-highlight-face ((t (:inherit (link) :weight bold))))
 
    ;; term
    `(term-color-black ((t :foreground ,atom-one-dark-mono-1)))
