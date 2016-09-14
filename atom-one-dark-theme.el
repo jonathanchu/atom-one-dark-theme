@@ -260,7 +260,7 @@
 
    ;; flx-ido
    `(flx-highlight-face ((t (:inherit (link) :weight bold))))
-   
+
    ;; rpm-spec-mode
    `(rpm-spec-tag-face ((t (:foreground ,atom-one-dark-blue))))
    `(rpm-spec-obsolete-tag-face ((t (:foreground "#FFFFFF" :background ,atom-one-dark-red-2))))
@@ -281,6 +281,13 @@
    `(term-color-red ((t :foreground ,atom-one-dark-red-1)))
    `(term-color-white ((t :foreground ,atom-one-dark-fg)))
    `(term-color-yellow ((t (:foreground ,atom-one-dark-orange-1))))
+   ))
+
+(atom-one-dark-with-color-variables
+  (custom-theme-set-variables
+   'atom-one-dark
+;;;;; fill-column-indicator
+   `(fci-rule-color ,atom-one-dark-gray)
    ))
 
 ;;;###autoload
