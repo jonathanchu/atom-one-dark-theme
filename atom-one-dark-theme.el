@@ -174,6 +174,9 @@
    `(git-commit-comment-branch  ((t (:foreground ,atom-one-dark-blue :weight bold))))
    `(git-commit-comment-heading ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
 
+   ;; js2-mode
+   `(js2-function-param ((t (:foreground ,atom-one-dark-mono-1))))
+
    ;; magit
    `(magit-section-highlight ((t (:background ,atom-one-dark-bg-hl))))
    `(magit-section-heading ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
