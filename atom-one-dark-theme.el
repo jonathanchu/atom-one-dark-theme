@@ -170,6 +170,9 @@
    `(helm-grep-lineno ((t (:foreground ,atom-one-dark-mono-2))))
    `(helm-grep-finish ((t (:foreground ,atom-one-dark-red-1))))
    `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
+   `(helm-swoop-target-line-block-face ((t (:background ,atom-one-dark-mono-3 :foreground "#222222"))))
+   `(helm-swoop-target-line-face ((t (:background ,atom-one-dark-mono-3 :foreground "#222222"))))
+   `(helm-swoop-target-word-face ((t (:background ,atom-one-dark-purple :foreground "#ffffff"))))
 
    ;; git-commit
    `(git-commit-comment-action  ((t (:foreground ,atom-one-dark-green :weight bold))))
@@ -296,6 +299,14 @@
    `(linum ((t (:foreground ,atom-one-dark-gutter :background ,atom-one-dark-bg))))
    ;; hlinum
    `(linum-highlight-face ((t (:foreground ,atom-one-dark-accent :background ,atom-one-dark-bg))))
+
+   ;; latex-mode
+   `(font-latex-sectioning-0-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
+   `(font-latex-sectioning-1-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
+   `(font-latex-sectioning-2-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
+   `(font-latex-sectioning-3-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
+   `(font-latex-sectioning-4-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
+   `(font-latex-sectioning-5-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
    ))
 
 (atom-one-dark-with-color-variables
