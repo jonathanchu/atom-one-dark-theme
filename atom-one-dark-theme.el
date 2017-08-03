@@ -1,15 +1,30 @@
 ;;; atom-one-dark-theme.el --- Atom One Dark color theme
-;;
-;; Copyright 2016 Jonathan Chu
-;;
+
+;; Copyright 2015-2017 Jonathan Chu
+
 ;; Author: Jonathan Chu <me@jonathanchu.is>
 ;; URL: https://github.com/jonathanchu/atom-one-dark-theme
 ;; Version: 0.4.0
-;;
+
+;; This file is not part of GNU Emacs.
+
+;; This file is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 3, or (at your option)
+;; any later version.
+
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 ;;; Commentary:
-;;
+
 ;; An Emacs port of the Atom One Dark theme from Atom.io.
-;;
+
 ;;; Code:
 
 (deftheme atom-one-dark
