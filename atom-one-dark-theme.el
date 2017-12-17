@@ -196,6 +196,22 @@
    `(git-commit-comment-branch  ((t (:foreground ,atom-one-dark-blue :weight bold))))
    `(git-commit-comment-heading ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
 
+   ;; jabber
+   `(jabber-roster-user-online ((t (:foreground ,atom-one-dark-green))))
+   `(jabber-roster-user-away ((t (:foreground ,atom-one-dark-red-1))))
+   `(jabber-roster-user-xa ((t (:foreground ,atom-one-dark-red-2))))
+   `(jabber-roster-user-dnd ((t (:foregrond ,atom-one-dark-purple))))
+   `(jabber-roster-user-chatty ((t (:foreground ,atom-one-dark-orange-2))))
+   `(jabber-roster-user-error ((t (:foreground ,atom-one-dark-red-1 :bold t))))
+   `(jabber-roster-user-offline ((t (:foreground ,atom-one-dark-mono-3))))
+   `(jabber-chat-prompt-local ((t (:foreground ,atom-one-dark-blue))))
+   `(jabber-chat-prompt-foreign ((t (:foreground ,atom-one-dark-orange-2))))
+   `(jabber-chat-prompt-system ((t (:foreground ,atom-one-dark-mono-3))))
+   `(jabber-chat-error ((t (:inherit jabber-roster-user-error))))
+   `(jabber-rare-time-face ((t (:foreground ,atom-one-dark-cyan))))
+   `(jabber-activity-face ((t (:inherit jabber-chat-prompt-foreign))))
+   `(jabber-activity-personal-face ((t (:inherit jabber-chat-prompt-local))))
+
    ;; js2-mode
    `(js2-function-call ((t (:inherit (font-lock-function-name-face)))))
    `(js2-function-param ((t (:foreground ,atom-one-dark-mono-1))))
@@ -262,6 +278,9 @@
    `(magit-reflog-cherry-pick  ((t (:foreground ,atom-one-dark-green))))
    `(magit-reflog-remote       ((t (:foreground ,atom-one-dark-cyan))))
    `(magit-reflog-other        ((t (:foreground ,atom-one-dark-cyan))))
+
+   ;; perspective
+   `(persp-selected-face ((t (:foreground ,atom-one-dark-blue))))
 
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,atom-one-dark-fg))))
