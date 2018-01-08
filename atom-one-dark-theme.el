@@ -335,6 +335,9 @@
    `(linum ((t (:foreground ,atom-one-dark-gutter :background ,atom-one-dark-bg))))
    ;; hlinum
    `(linum-highlight-face ((t (:foreground ,atom-one-dark-accent :background ,atom-one-dark-bg))))
+   ;; native line numbers (emacs version >=26)
+   `(line-number ((t (:foreground ,atom-one-dark-gutter :background ,atom-one-dark-bg))))
+   `(line-number-current-line ((t (:foreground ,atom-one-dark-accent :background ,atom-one-dark-bg))))
 
    ;; latex-mode
    `(font-latex-sectioning-0-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
