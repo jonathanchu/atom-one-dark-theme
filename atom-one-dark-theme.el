@@ -353,6 +353,17 @@
    `(org-footnote ((t (:foreground ,atom-one-dark-cyan))))
    `(org-sexp-date ((t (:foreground ,atom-one-dark-cyan))))
 
+   ;; realgud
+   `(realgud-overlay-arrow1        ((t (:foreground ,atom-one-dark-green))))
+   `(realgud-overlay-arrow3        ((t (:foreground ,atom-one-dark-orange-1))   `(realgud-overlay-arrow2        ((t (:foreground ,atom-one-dark-orange-2))))
+))
+   '(realgud-bp-enabled-face       ((t (:inherit (error)))))
+   `(realgud-bp-disabled-face      ((t (:inherit (secondary-selection)))))
+   `(realgud-bp-line-enabled-face  ((t (:foreground ,atom-one-dark-red-1))))
+   `(realgud-bp-line-disabled-face ((t (:inherit (secondary-selection)))))
+   `(realgud-line-number           ((t (:foreground ,atom-one-dark-mono-2))))
+   `(realgud-backtrace-number      ((t (:inherit (secondary-selection)))))
+
    ;; undo-tree
    `(undo-tree-visualizer-current-face ((t (:foreground ,atom-one-dark-red-1))))
    `(undo-tree-visualizer-register-face ((t (:foreground ,atom-one-dark-orange-1))))
