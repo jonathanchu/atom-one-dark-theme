@@ -199,7 +199,7 @@
    `(jabber-roster-user-online ((t (:foreground ,atom-one-dark-green))))
    `(jabber-roster-user-away ((t (:foreground ,atom-one-dark-red-1))))
    `(jabber-roster-user-xa ((t (:foreground ,atom-one-dark-red-2))))
-   `(jabber-roster-user-dnd ((t (:foregrond ,atom-one-dark-purple))))
+   `(jabber-roster-user-dnd ((t (:foreground ,atom-one-dark-purple))))
    `(jabber-roster-user-chatty ((t (:foreground ,atom-one-dark-orange-2))))
    `(jabber-roster-user-error ((t (:foreground ,atom-one-dark-red-1 :bold t))))
    `(jabber-roster-user-offline ((t (:foreground ,atom-one-dark-mono-3))))
