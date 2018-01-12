@@ -49,8 +49,9 @@
     ("atom-one-dark-orange-1" . "#D19A66")
     ("atom-one-dark-orange-2" . "#E5C07B")
     ("atom-one-dark-gray"     . "#3E4451")
-    ("atom-one-dark-silver"   . "#AAAAAA")
-    ("atom-one-dark-black"    . "#0F1011"))
+    ("atom-one-dark-silver"   . "#9DA5B4")
+    ("atom-one-dark-black"    . "#21252B")
+    ("atom-one-dark-border"   . "#181A1F"))
   "List of Atom One Dark colors.")
 
 (defmacro atom-one-dark-with-color-variables (&rest body)
@@ -96,10 +97,10 @@
    `(font-lock-warning-face ((t (:foreground ,atom-one-dark-mono-3 :bold t))))
 
    ;; mode-line
-   `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver))))
+   `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver :box (:color ,atom-one-dark-border :line-width 1)))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
-   `(mode-line-inactive ((t (:background ,atom-one-dark-gray))))
+   `(mode-line-inactive ((t (:background ,atom-one-dark-gray :foreground ,atom-one-dark-mono-3))))
 
    ;; ido
    `(ido-first-match ((t (:foreground ,atom-one-dark-purple :weight bold))))
