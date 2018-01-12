@@ -36,7 +36,7 @@
     ("atom-one-dark-bg"       . "#282C34")
     ("atom-one-dark-bg-1"     . "#121417")
     ("atom-one-dark-bg-hl"    . "#2F343D")
-    ("atom-one-dark-gutter"   . "#636D83")
+    ("atom-one-dark-gutter"   . "#4B5363")
     ("atom-one-dark-mono-1"   . "#ABB2BF")
     ("atom-one-dark-mono-2"   . "#828997")
     ("atom-one-dark-mono-3"   . "#5C6370")
