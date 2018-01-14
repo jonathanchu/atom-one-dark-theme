@@ -362,8 +362,8 @@
 ))
    '(realgud-bp-enabled-face       ((t (:inherit (error)))))
    `(realgud-bp-disabled-face      ((t (:inherit (secondary-selection)))))
-   `(realgud-bp-line-enabled-face  ((t (:foreground ,atom-one-dark-red-1))))
-   `(realgud-bp-line-disabled-face ((t (:inherit (secondary-selection)))))
+   `(realgud-bp-line-enabled-face  ((t (:box (:color ,atom-one-dark-red-1)))))
+   `(realgud-bp-line-disabled-face ((t (:box (:color ,atom-one-dark-gray)))))
    `(realgud-line-number           ((t (:foreground ,atom-one-dark-mono-2))))
    `(realgud-backtrace-number      ((t (:inherit (secondary-selection)))))
 
