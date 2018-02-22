@@ -80,7 +80,7 @@
    `(region ((t (:background ,atom-one-dark-gray))))
    `(highlight ((t (:background ,atom-one-dark-gray))))
    `(hl-line ((t (:background ,atom-one-dark-bg-hl))))
-   `(vertical-border ((t (:foreground ,atom-one-dark-mono-3))))
+   `(vertical-border ((t (:background ,atom-one-dark-border :foreground ,atom-one-dark-border))))
    `(secondary-selection ((t (:background ,atom-one-dark-bg-1))))
    `(query-replace ((t (:inherit (isearch)))))
    `(minibuffer-prompt ((t (:foreground ,atom-one-dark-silver))))
@@ -102,7 +102,7 @@
    `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver :box (:color ,atom-one-dark-border :line-width 1)))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
-   `(mode-line-inactive ((t (:background ,atom-one-dark-gray :foreground ,atom-one-dark-mono-3))))
+   `(mode-line-inactive ((t (:background ,atom-one-dark-border :foreground ,atom-one-dark-gray :box (:color ,atom-one-dark-border :line-width 1)))))
 
    ;; ido
    `(ido-first-match ((t (:foreground ,atom-one-dark-purple :weight bold))))
