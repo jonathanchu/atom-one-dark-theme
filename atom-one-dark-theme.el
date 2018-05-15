@@ -90,7 +90,7 @@
    `(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
    `(font-lock-doc-face ((t (:inherit (font-lock-string-face)))))
    `(font-lock-function-name-face ((t (:foreground ,atom-one-dark-blue))))
-   `(font-lock-keyword-face ((t (:foreground ,atom-one-dark-purple))))
+   `(font-lock-keyword-face ((t (:foreground ,atom-one-dark-purple :weight normal))))
    `(font-lock-preprocessor-face ((t (:foreground ,atom-one-dark-mono-2))))
    `(font-lock-string-face ((t (:foreground ,atom-one-dark-green))))
    `(font-lock-type-face ((t (:foreground ,atom-one-dark-orange-2))))
