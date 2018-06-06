@@ -328,6 +328,12 @@
    `(sp-show-pair-mismatch-face ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-gray :weight bold))))
    `(sp-show-pair-match-face ((t (:background ,atom-one-dark-gray :weight bold))))
 
+   ;; spaceline
+   `(spaceline-flycheck-error  ((,class (:foreground ,atom-one-dark-red-1))))
+   `(spaceline-flycheck-info   ((,class (:foreground ,atom-one-dark-green))))
+   `(spaceline-flycheck-warning((,class (:foreground ,atom-one-dark-orange-1))))
+   `(spaceline-python-venv ((,class (:foreground ,atom-one-dark-purple))))
+
    ;; web-mode
    `(web-mode-symbol-face ((t (:foreground ,atom-one-dark-orange-1))))
 
