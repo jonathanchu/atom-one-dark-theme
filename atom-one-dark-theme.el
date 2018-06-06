@@ -300,6 +300,12 @@
    ;; perspective
    `(persp-selected-face ((t (:foreground ,atom-one-dark-blue))))
 
+   ;; powerline
+   `(powerline-active1 ((,class (:background ,atom-one-dark-bg-hl :foreground ,atom-one-dark-purple))))
+   `(powerline-active2 ((,class (:background ,atom-one-dark-bg-hl :foreground ,atom-one-dark-purple))))
+   `(powerline-inactive1 ((,class (:background ,atom-one-dark-bg :foreground ,atom-one-dark-fg))))
+   `(powerline-inactive2 ((,class (:background ,atom-one-dark-bg :foreground ,atom-one-dark-fg))))
+
    ;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((t (:foreground ,atom-one-dark-fg))))
    `(rainbow-delimiters-depth-2-face ((t (:foreground ,atom-one-dark-purple))))
