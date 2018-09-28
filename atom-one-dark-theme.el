@@ -209,10 +209,21 @@
    ;; counsel
    `(counsel-key-binding ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
 
+   ;; swiper
+   `(swiper-match-face-1 ((t (:inherit ivy-minibuffer-match-face-1))))
+   `(swiper-match-face-2 ((t (:inherit ivy-minibuffer-match-face-2))))
+   `(swiper-match-face-3 ((t (:inherit ivy-minibuffer-match-face-3))))
+   `(swiper-match-face-4 ((t (:inherit ivy-minibuffer-match-face-4))))
+
    ;; git-commit
    `(git-commit-comment-action  ((t (:foreground ,atom-one-dark-green :weight bold))))
    `(git-commit-comment-branch  ((t (:foreground ,atom-one-dark-blue :weight bold))))
    `(git-commit-comment-heading ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
+
+   ;; git-gutter
+   `(git-gutter:added ((t (:foreground ,atom-one-dark-green :weight bold))))
+   `(git-gutter:deleted ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
+   `(git-gutter:modified ((t (:foreground ,atom-one-dark-orange-1 :weight bold))))
 
    ;; jabber
    `(jabber-roster-user-online ((t (:foreground ,atom-one-dark-green))))
@@ -369,6 +380,12 @@
    `(line-number ((t (:foreground ,atom-one-dark-gutter :background ,atom-one-dark-bg))))
    `(line-number-current-line ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg))))
 
+   ;; regexp-builder
+   `(reb-match-0 ((t (:background ,atom-one-dark-gray))))
+   `(reb-match-1 ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-purple :weight semi-bold))))
+   `(reb-match-2 ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-green :weight semi-bold))))
+   `(reb-match-3 ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-orange-2 :weight semi-bold))))
+
    ;; latex-mode
    `(font-latex-sectioning-0-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
    `(font-latex-sectioning-1-face ((t (:foreground ,atom-one-dark-blue :height 1.0))))
@@ -408,6 +425,10 @@
    'atom-one-dark
 ;;;;; fill-column-indicator
    `(fci-rule-color ,atom-one-dark-gray)
+   ;; ansi-color
+   `(ansi-color-names-vector
+     [,atom-one-dark-black ,atom-one-dark-red-1 ,atom-one-dark-green ,atom-one-dark-orange-2
+      ,atom-one-dark-blue ,atom-one-dark-purple ,atom-one-dark-cyan ,atom-one-dark-fg])
    ))
 
 (defvar atom-one-dark-theme-force-faces-for-mode t
