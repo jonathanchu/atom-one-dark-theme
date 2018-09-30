@@ -242,6 +242,19 @@
    `(git-gutter:deleted ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
    `(git-gutter:modified ((t (:foreground ,atom-one-dark-orange-1 :weight bold))))
 
+   ;; man
+   `(Man-overstrike ((t (:inherit font-lock-type-face :weight bold))))
+   `(Man-underline ((t (:inherit font-lock-keyword-face :slant italic :weight bold))))
+
+   ;; woman
+   `(woman-bold ((t (:inherit font-lock-type-face :weight bold))))
+   `(woman-italic ((t (:inherit font-lock-keyword-face :slant italic :weight bold))))
+
+   ;; dictionary
+   `(dictionary-button-face ((t (:inherit widget-button))))
+   `(dictionary-reference-face ((t (:inherit font-lock-type-face :weight bold))))
+   `(dictionary-word-entry-face ((t (:inherit font-lock-keyword-face :slant italic :weight bold))))
+
    ;; jabber
    `(jabber-roster-user-online ((t (:foreground ,atom-one-dark-green))))
    `(jabber-roster-user-away ((t (:foreground ,atom-one-dark-red-1))))
@@ -257,6 +270,16 @@
    `(jabber-rare-time-face ((t (:foreground ,atom-one-dark-cyan))))
    `(jabber-activity-face ((t (:inherit jabber-chat-prompt-foreign))))
    `(jabber-activity-personal-face ((t (:inherit jabber-chat-prompt-local))))
+
+   ;; eww
+   `(eww-form-checkbox ((t (:inherit eww-form-submit))))
+   `(eww-form-file ((t (:inherit eww-form-submit))))
+   `(eww-form-select ((t (:inherit eww-form-submit))))
+   `(eww-form-submit ((t (:background ,atom-one-dark-gray :foreground ,atom-one-dark-fg :box (:line-width 2 :color ,atom-one-dark-border :style released-button)))))
+   `(eww-form-text ((t (:inherit widget-field :box (:line-width 1 :color ,atom-one-dark-border)))))
+   `(eww-form-textarea ((t (:inherit eww-form-text))))
+   `(eww-invalid-certificate ((t (:foreground ,atom-one-dark-red-1))))
+   `(eww-valid-certificate ((t (:foreground ,atom-one-dark-green))))
 
    ;; js2-mode
    `(js2-error ((t (:underline (:color ,atom-one-dark-red-1 :style wave)))))
@@ -520,8 +543,9 @@
 (atom-one-dark-with-color-variables
   (custom-theme-set-variables
    'atom-one-dark
-;;;;; fill-column-indicator
+   ;; fill-column-indicator
    `(fci-rule-color ,atom-one-dark-gray)
+
    ;; tetris
    ;; | Tetromino | Color                    |
    ;; | O         | `atom-one-dark-orange-2' |
@@ -533,6 +557,7 @@
    ;; | I         | `atom-one-dark-cyan'     |
    '(tetris-x-colors
      [[229 192 123] [97 175 239] [209 154 102] [224 108 117] [152 195 121] [198 120 221] [86 182 194]])
+
    ;; ansi-color
    `(ansi-color-names-vector
      [,atom-one-dark-black ,atom-one-dark-red-1 ,atom-one-dark-green ,atom-one-dark-orange-2
