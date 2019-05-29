@@ -663,6 +663,7 @@ do not provide the necessary faces to do theming without conflicting with other
 modes.
 Current modes, and their faces, impacted by this variable:
 * js2-mode: font-lock-constant-face, font-lock-doc-face, font-lock-variable-name-face
+* html-mode: font-lock-function-name-face, font-lock-variable-name-face
 ")
 
 ;; Many modes in Emacs do not define their own faces and instead use standard Emacs faces when it comes to theming.
@@ -676,17 +677,16 @@ Current modes, and their faces, impacted by this variable:
 ;; `nil` to disable this feature.
 (defun atom-one-dark-theme-change-faces-for-mode ()
   (interactive)
-  (and (eq atom-one-dark-theme-force-faces-for-mode t)
-       (cond
-        ((member major-mode '(js2-mode))
-         ;; atom-one-dark-orange-1
-         (face-remap-add-relative 'font-lock-constant-face :foreground "#D19A66")
-         (face-remap-add-relative 'font-lock-doc-face '(:inherit (font-lock-comment-face)))
-         ;; atom-one-dark-mono-1
-         (face-remap-add-relative 'font-lock-variable-name-face :foreground "#ABB2BF"))
-        ((member major-mode '(html-mode))
-         (face-remap-add-relative 'font-lock-function-name-face :foreground atom-one-dark-red-1)
-         (face-remap-add-relative 'font-lock-variable-name-face :foreground atom-one-dark-orange-1)))))
+  (when (or atom-one-dark-theme-force-faces-for-mode (called-interactively-p))
+    (atom-one-dark-with-color-variables
+      (cond
+       ((member major-mode '(js2-mode))
+        (face-remap-add-relative 'font-lock-constant-face :foreground atom-one-dark-orange-1)
+        (face-remap-add-relative 'font-lock-doc-face '(:inherit (font-lock-comment-face)))
+        (face-remap-add-relative 'font-lock-variable-name-face :foreground atom-one-dark-mono-1))
+       ((member major-mode '(html-mode))
+        (face-remap-add-relative 'font-lock-function-name-face :foreground atom-one-dark-red-1)
+        (face-remap-add-relative 'font-lock-variable-name-face :foreground atom-one-dark-orange-1))))))
 
 (add-hook 'after-change-major-mode-hook 'atom-one-dark-theme-change-faces-for-mode)
 
