@@ -470,6 +470,10 @@
   `(elixir-atom-face ((t (:foreground ,atom-one-dark-cyan))))
   `(elixir-attribute-face ((t (:foreground ,atom-one-dark-red-1))))
 
+  ;; show-paren
+  `(show-paren-match ((,class (:foreground ,atom-one-dark-purple :inherit bold :underline t))))
+  `(show-paren-mismatch ((,class (:foreground ,atom-one-dark-red-1 :inherit bold :underline t))))
+
   ;; sh-mode
   `(sh-heredoc ((t (:inherit font-lock-string-face :slant italic))))
 
@@ -500,6 +504,10 @@
   `(spaceline-flycheck-info   ((,class (:foreground ,atom-one-dark-green))))
   `(spaceline-flycheck-warning((,class (:foreground ,atom-one-dark-orange-1))))
   `(spaceline-python-venv ((,class (:foreground ,atom-one-dark-purple))))
+
+  ;; solaire mode
+  `(solaire-default-face ((,class (:inherit default :background ,atom-one-dark-black))))
+  `(solaire-minibuffer-face ((,class (:inherit default :background ,atom-one-dark-black))))
 
   ;; web-mode
   `(web-mode-doctype-face ((t (:inherit font-lock-comment-face))))
@@ -548,6 +556,17 @@
   `(term-color-red ((t :foreground ,atom-one-dark-red-1)))
   `(term-color-white ((t :foreground ,atom-one-dark-fg)))
   `(term-color-yellow ((t (:foreground ,atom-one-dark-orange-1))))
+
+  ;; tabbar
+  `(tabbar-default ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-black))))
+  `(tabbar-highlight ((,class (:underline t))))
+  `(tabbar-button ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg))))
+  `(tabbar-button-highlight ((,class (:inherit 'tabbar-button :inverse-video t))))
+  `(tabbar-modified ((,class (:inherit tabbar-button :foreground ,atom-one-dark-purple :weight light :slant italic))))
+  `(tabbar-unselected ((,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-black :slant italic :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
+  `(tabbar-unselected-modified ((,class (:inherit tabbar-modified :background ,atom-one-dark-black :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
+  `(tabbar-selected ((,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-bg :weight bold :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
+  `(tabbar-selected-modified ((,class (:inherit tabbar-selected :foreground ,atom-one-dark-purple :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
 
   ;; linum
   `(linum ((t (:foreground ,atom-one-dark-gutter :background ,atom-one-dark-bg))))
