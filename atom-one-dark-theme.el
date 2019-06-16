@@ -98,6 +98,7 @@
    `(font-lock-constant-face ((t (:foreground ,atom-one-dark-cyan))))
    `(font-lock-variable-name-face ((t (:foreground ,atom-one-dark-red-1))))
    `(font-lock-warning-face ((t (:foreground ,atom-one-dark-mono-3 :bold t))))
+   `(font-lock-negation-char-face ((t (:foreground ,atom-one-dark-cyan :bold t))))
 
    ;; mode-line
    `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver :box (:color ,atom-one-dark-border :line-width 1)))))
