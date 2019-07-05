@@ -80,6 +80,7 @@
   `(region ((t (:background ,atom-one-dark-gray :distant-foreground ,atom-one-dark-mono-2))))
   `(highlight ((t (:background ,atom-one-dark-gray :distant-foreground ,atom-one-dark-mono-2))))
   `(hl-line ((t (:background ,atom-one-dark-bg-hl :distant-foreground nil))))
+  `(header-line ((t (:background ,atom-one-dark-black))))
   `(vertical-border ((t (:background ,atom-one-dark-border :foreground ,atom-one-dark-border))))
   `(secondary-selection ((t (:background ,atom-one-dark-bg-1))))
   `(query-replace ((t (:inherit (isearch)))))
@@ -128,6 +129,18 @@
   `(aw-background-face ((t (:inherit font-lock-comment-face))))
   `(aw-leading-char-face ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
 
+  ;; centaur-tabs
+  `(centaur-tabs-default ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-black))))
+  `(centaur-tabs-selected ((t (:background ,atom-one-dark-bg :foreground ,atom-one-dark-fg :weight bold))))
+  `(centaur-tabs-unselected ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-fg :weight light))))
+  `(centaur-tabs-selected-modified ((t (:background ,atom-one-dark-bg
+						    :foreground ,atom-one-dark-blue :weight bold))))
+  `(centaur-tabs-unselected-modified ((t (:background ,atom-one-dark-black :weight light
+						      :foreground ,atom-one-dark-blue))))
+  `(centaur-tabs-active-bar-face ((t (:background ,atom-one-dark-accent))))
+  `(centaur-tabs-modified-marker-selected ((t (:inherit 'centaur-tabs-selected :foreground,atom-one-dark-accent))))
+  `(centaur-tabs-modified-marker-unselected ((t (:inherit 'centaur-tabs-unselected :foreground,atom-one-dark-accent))))
+
   ;; company-mode
   `(company-tooltip ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg-1))))
   `(company-tooltip-annotation ((t (:foreground ,atom-one-dark-mono-2 :background ,atom-one-dark-bg-1))))
@@ -142,6 +155,8 @@
   `(company-scrollbar-bg ((t (:background ,atom-one-dark-bg-1))))
   `(company-template-field ((t (:inherit highlight))))
 
+  ;; doom-modeline
+  `(doom-modeline-bar ((t (:background ,atom-one-dark-accent))))
 
   ;; flyspell
   `(flyspell-duplicate ((t (:underline (:color ,atom-one-dark-orange-1 :style wave)))))
