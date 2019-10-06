@@ -664,6 +664,11 @@
   `(undo-tree-visualizer-current-face ((t (:foreground ,atom-one-dark-red-1))))
   `(undo-tree-visualizer-register-face ((t (:foreground ,atom-one-dark-orange-1))))
   `(undo-tree-visualizer-unmodified-face ((t (:foreground ,atom-one-dark-cyan))))
+
+  ;; tab-bar-mode
+  `(tab-bar-tab-inactive ((t (:background ,atom-one-dark-bg-hl :foreground ,atom-one-dark-fg))))
+  `(tab-bar-tab          ((t (:background ,atom-one-dark-bg :foreground ,atom-one-dark-purple))))
+  `(tab-bar              ((t (:background ,atom-one-dark-bg-hl))))
   ))
 
 (atom-one-dark-with-color-variables
