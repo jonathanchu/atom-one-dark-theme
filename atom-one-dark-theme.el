@@ -32,27 +32,36 @@
 
 (defvar atom-one-dark-colors-alist
   (let* ((256color  (eq (display-color-cells (selected-frame)) 256))
-         (colors `(("atom-one-dark-accent"   . "#528BFF")
-                   ("atom-one-dark-fg"       . (if ,256color "color-248" "#ABB2BF"))
-                   ("atom-one-dark-bg"       . (if ,256color "color-235" "#282C34"))
-                   ("atom-one-dark-bg-1"     . (if ,256color "color-234" "#121417"))
-                   ("atom-one-dark-bg-hl"    . (if ,256color "color-236" "#2C323C"))
-                   ("atom-one-dark-gutter"   . (if ,256color "color-239" "#4B5363"))
-                   ("atom-one-dark-mono-1"   . (if ,256color "color-248" "#ABB2BF"))
-                   ("atom-one-dark-mono-2"   . (if ,256color "color-244" "#828997"))
-                   ("atom-one-dark-mono-3"   . (if ,256color "color-240" "#5C6370"))
-                   ("atom-one-dark-cyan"     . "#56B6C2")
-                   ("atom-one-dark-blue"     . "#61AFEF")
-                   ("atom-one-dark-purple"   . "#C678DD")
-                   ("atom-one-dark-green"    . "#98C379")
-                   ("atom-one-dark-red-1"    . "#E06C75")
-                   ("atom-one-dark-red-2"    . "#BE5046")
-                   ("atom-one-dark-orange-1" . "#D19A66")
-                   ("atom-one-dark-orange-2" . "#E5C07B")
-                   ("atom-one-dark-gray"     . (if ,256color "color-237" "#3E4451"))
-                   ("atom-one-dark-silver"   . (if ,256color "color-247" "#9DA5B4"))
-                   ("atom-one-dark-black"    . (if ,256color "color-233" "#21252B"))
-                   ("atom-one-dark-border"   . (if ,256color "color-232" "#181A1F")))))
+         (colors `(("atom-one-dark-accent"        . "#528BFF")
+                   ("atom-one-dark-fg"            . (if ,256color "color-248" "#ABB2BF"))
+                   ("atom-one-dark-bg"            . (if ,256color "color-235" "#282C34"))
+                   ("atom-one-dark-bg-1"          . (if ,256color "color-234" "#121417"))
+                   ("atom-one-dark-bg-hl"         . (if ,256color "color-236" "#2C323C"))
+                   ("atom-one-dark-gutter"        . (if ,256color "color-239" "#4B5363"))
+                   ("atom-one-dark-insert"        . "#43D08A")
+                   ("atom-one-dark-change"        . "#E0C285")
+                   ("atom-one-dark-delete"        . "#E05252")
+                   ("atom-one-dark-info"          . "#6494ED")
+                   ("atom-one-dark-success"       . "#73C900")
+                   ("atom-one-dark-warning"       . "#E2C08D")
+                   ("atom-one-dark-error"         . "#FF6347")
+                   ("atom-one-dark-mono-1"        . (if ,256color "color-248" "#ABB2BF"))
+                   ("atom-one-dark-mono-2"        . (if ,256color "color-244" "#828997"))
+                   ("atom-one-dark-mono-3"        . (if ,256color "color-240" "#5C6370"))
+                   ("atom-one-dark-cyan"          . "#56B6C2")
+                   ("atom-one-dark-blue"          . "#61AFEF")
+                   ("atom-one-dark-purple"        . "#C678DD")
+                   ("atom-one-dark-green"         . "#98C379")
+                   ("atom-one-dark-red-1"         . "#E06C75")
+                   ("atom-one-dark-red-2"         . "#BE5046")
+                   ("atom-one-dark-orange-1"      . "#D19A66")
+                   ("atom-one-dark-orange-2"      . "#E5C07B")
+                   ("atom-one-dark-gray"          . (if ,256color "color-237" "#3E4451"))
+                   ("atom-one-dark-silver"        . (if ,256color "color-247" "#9DA5B4"))
+                   ("atom-one-dark-black"         . (if ,256color "color-233" "#21252B"))
+                   ("atom-one-dark-ui-fg"         . (if ,256color "color-247" "#9DA5B4"))
+                   ("atom-one-dark-level-3-color" . (if ,256color "color-233" "#21252B"))
+                   ("atom-one-dark-border"        . (if ,256color "color-232" "#181A1F")))))
     colors)
   "List of Atom One Dark colors.")
 
@@ -79,12 +88,12 @@
    `(fringe ((t (:background ,atom-one-dark-bg))))
    `(region ((t (:background ,atom-one-dark-gray :distant-foreground ,atom-one-dark-mono-2))))
    `(highlight ((t (:background ,atom-one-dark-gray :distant-foreground ,atom-one-dark-mono-2))))
-   `(hl-line ((t (:background ,atom-one-dark-bg-hl :distant-foreground nil))))
-   `(header-line ((t (:background ,atom-one-dark-black))))
+   `(hl-line ((t (:background ,atom-one-dark-bg-hl :distant-foreground unspecified))))
+   `(header-line ((t (:background ,atom-one-dark-level-3-color))))
    `(vertical-border ((t (:background ,atom-one-dark-border :foreground ,atom-one-dark-border))))
    `(secondary-selection ((t (:background ,atom-one-dark-bg-1))))
    `(query-replace ((t (:inherit (isearch)))))
-   `(minibuffer-prompt ((t (:foreground ,atom-one-dark-silver))))
+   `(minibuffer-prompt ((t (:foreground ,atom-one-dark-ui-fg))))
    `(tooltip ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg-1 :inherit variable-pitch))))
 
    `(font-lock-builtin-face ((t (:foreground ,atom-one-dark-cyan))))
@@ -102,10 +111,10 @@
    `(font-lock-negation-char-face ((t (:foreground ,atom-one-dark-cyan :bold t))))
 
    ;; mode-line
-   `(mode-line ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-silver :box (:color ,atom-one-dark-border :line-width 1)))))
+   `(mode-line ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-ui-fg :box (:color ,atom-one-dark-border :line-width 1)))))
    `(mode-line-buffer-id ((t (:weight bold))))
    `(mode-line-emphasis ((t (:weight bold))))
-   `(mode-line-inactive ((t (:background ,atom-one-dark-border :foreground ,atom-one-dark-gray :box (:color ,atom-one-dark-border :line-width 1)))))
+   `(mode-line-inactive ((t (:background ,atom-one-dark-border :foreground ,atom-one-dark-mono-3 :box (:color ,atom-one-dark-border :line-width 1)))))
 
    ;; window-divider
    `(window-divider ((t (:foreground ,atom-one-dark-border))))
@@ -130,12 +139,12 @@
    `(aw-leading-char-face ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
 
    ;; centaur-tabs
-   `(centaur-tabs-default ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-black))))
+   `(centaur-tabs-default ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-level-3-color))))
    `(centaur-tabs-selected ((t (:background ,atom-one-dark-bg :foreground ,atom-one-dark-fg :weight bold))))
-   `(centaur-tabs-unselected ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-fg :weight light))))
+   `(centaur-tabs-unselected ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-ui-fg :weight light))))
    `(centaur-tabs-selected-modified ((t (:background ,atom-one-dark-bg
                                                      :foreground ,atom-one-dark-blue :weight bold))))
-   `(centaur-tabs-unselected-modified ((t (:background ,atom-one-dark-black :weight light
+   `(centaur-tabs-unselected-modified ((t (:background ,atom-one-dark-level-3-color :weight light
                                                        :foreground ,atom-one-dark-blue))))
    `(centaur-tabs-active-bar-face ((t (:background ,atom-one-dark-accent))))
    `(centaur-tabs-modified-marker-selected ((t (:inherit 'centaur-tabs-selected :foreground,atom-one-dark-accent))))
@@ -159,18 +168,18 @@
    `(doom-modeline-bar ((t (:background ,atom-one-dark-accent))))
 
    ;; flyspell
-   `(flyspell-duplicate ((t (:underline (:color ,atom-one-dark-orange-1 :style wave)))))
-   `(flyspell-incorrect ((t (:underline (:color ,atom-one-dark-red-1 :style wave)))))
+   `(flyspell-duplicate ((t (:underline (:color ,atom-one-dark-warning :style wave)))))
+   `(flyspell-incorrect ((t (:underline (:color ,atom-one-dark-error :style wave)))))
 
    ;; flymake
-   `(flymake-error ((t (:underline (:color ,atom-one-dark-red-1 :style wave)))))
-   `(flymake-note ((t (:underline (:color ,atom-one-dark-green :style wave)))))
-   `(flymake-warning ((t (:underline (:color ,atom-one-dark-orange-1 :style wave)))))
+   `(flymake-error ((t (:underline (:color ,atom-one-dark-error :style wave)))))
+   `(flymake-note ((t (:underline (:color ,atom-one-dark-info :style wave)))))
+   `(flymake-warning ((t (:underline (:color ,atom-one-dark-warning :style wave)))))
 
    ;; flycheck
-   `(flycheck-error ((t (:underline (:color ,atom-one-dark-red-1 :style wave)))))
-   `(flycheck-info ((t (:underline (:color ,atom-one-dark-green :style wave)))))
-   `(flycheck-warning ((t (:underline (:color ,atom-one-dark-orange-1 :style wave)))))
+   `(flycheck-error ((t (:underline (:color ,atom-one-dark-error :style wave)))))
+   `(flycheck-info ((t (:underline (:color ,atom-one-dark-info :style wave)))))
+   `(flycheck-warning ((t (:underline (:color ,atom-one-dark-warning :style wave)))))
 
    ;; compilation
    `(compilation-face ((t (:foreground ,atom-one-dark-fg))))
@@ -181,13 +190,13 @@
 
    ;; isearch
    `(isearch ((t (:foreground ,atom-one-dark-bg :background ,atom-one-dark-purple))))
-   `(isearch-fail ((t (:foreground ,atom-one-dark-red-2 :background nil))))
+   `(isearch-fail ((t (:foreground ,atom-one-dark-red-2 :background unspecified))))
    `(lazy-highlight ((t (:foreground ,atom-one-dark-purple :background ,atom-one-dark-bg-1 :underline ,atom-one-dark-purple))))
 
    ;; diff-hl (https://github.com/dgutov/diff-hl)
-   '(diff-hl-change ((t (:foreground "#E9C062" :background "#8b733a"))))
-   '(diff-hl-delete ((t (:foreground "#CC6666" :background "#7a3d3d"))))
-   '(diff-hl-insert ((t (:foreground "#A8FF60" :background "#547f30"))))
+   `(diff-hl-change ((t (:foreground ,atom-one-dark-change :background unspecified))))
+   `(diff-hl-delete ((t (:foreground ,atom-one-dark-delete :background unspecified))))
+   `(diff-hl-insert ((t (:foreground ,atom-one-dark-insert :background unspecified))))
 
    ;; dired-mode
    '(dired-directory ((t (:inherit (font-lock-keyword-face)))))
@@ -252,9 +261,9 @@
    `(ivy-highlight-face ((t (:inherit font-lock-builtin-face))))
    `(ivy-match-required-face ((t (:inherit minibuffer-prompt :foreground ,atom-one-dark-red-1))))
    `(ivy-minibuffer-match-face-1 ((t (:background ,atom-one-dark-bg-hl))))
-   `(ivy-minibuffer-match-face-2 ((t (:inherit ivy-minibuffer-match-face-1 :background ,atom-one-dark-black :foreground ,atom-one-dark-purple :weight semi-bold))))
-   `(ivy-minibuffer-match-face-3 ((t (:inherit ivy-minibuffer-match-face-2 :background ,atom-one-dark-black :foreground ,atom-one-dark-green :weight semi-bold))))
-   `(ivy-minibuffer-match-face-4 ((t (:inherit ivy-minibuffer-match-face-2 :background ,atom-one-dark-black :foreground ,atom-one-dark-orange-2 :weight semi-bold))))
+   `(ivy-minibuffer-match-face-2 ((t (:inherit ivy-minibuffer-match-face-1 :background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-purple :weight semi-bold))))
+   `(ivy-minibuffer-match-face-3 ((t (:inherit ivy-minibuffer-match-face-2 :background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-green :weight semi-bold))))
+   `(ivy-minibuffer-match-face-4 ((t (:inherit ivy-minibuffer-match-face-2 :background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-orange-2 :weight semi-bold))))
    `(ivy-minibuffer-match-highlight ((t (:inherit ivy-current-match))))
    `(ivy-modified-buffer ((t (:inherit default :foreground ,atom-one-dark-orange-1))))
    `(ivy-virtual ((t (:inherit font-lock-builtin-face :slant italic))))
@@ -274,9 +283,9 @@
    `(git-commit-comment-heading ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
 
    ;; git-gutter
-   `(git-gutter:added ((t (:foreground ,atom-one-dark-green :weight bold))))
-   `(git-gutter:deleted ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
-   `(git-gutter:modified ((t (:foreground ,atom-one-dark-orange-1 :weight bold))))
+   `(git-gutter:added ((t (:foreground ,atom-one-dark-insert :weight bold))))
+   `(git-gutter:deleted ((t (:foreground ,atom-one-dark-delete :weight bold))))
+   `(git-gutter:modified ((t (:foreground ,atom-one-dark-change :weight bold))))
 
    ;; eshell
    `(eshell-ls-archive ((t (:foreground ,atom-one-dark-purple :weight bold))))
@@ -384,7 +393,7 @@
    `(magit-process-ng ((t (:foreground ,atom-one-dark-red-1))))
    `(magit-log-author ((t (:foreground ,atom-one-dark-orange-2))))
    `(magit-log-date ((t (:foreground ,atom-one-dark-mono-2))))
-   `(magit-log-graph ((t (:foreground ,atom-one-dark-silver))))
+   `(magit-log-graph ((t (:foreground ,atom-one-dark-ui-fg))))
    `(magit-sequence-pick ((t (:foreground ,atom-one-dark-orange-2))))
    `(magit-sequence-stop ((t (:foreground ,atom-one-dark-green))))
    `(magit-sequence-part ((t (:foreground ,atom-one-dark-orange-1))))
@@ -433,7 +442,7 @@
    `(message-header-other ((t (:foreground ,atom-one-dark-red-1))))
    `(message-header-subject ((t (:foreground ,atom-one-dark-blue))))
    `(message-header-to ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
-   `(message-header-xheader ((t (:foreground ,atom-one-dark-silver))))
+   `(message-header-xheader ((t (:foreground ,atom-one-dark-ui-fg))))
    `(message-mml ((t (:foreground ,atom-one-dark-purple))))
    `(message-separator ((t (:foreground ,atom-one-dark-mono-3 :slant italic))))
 
@@ -442,14 +451,14 @@
    `(epa-field-name ((t (:foreground ,atom-one-dark-cyan :weight bold))))
 
    ;; notmuch
-   `(notmuch-crypto-decryption ((t (:foreground ,atom-one-dark-purple :background ,atom-one-dark-black))))
-   `(notmuch-crypto-signature-bad ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-black))))
-   `(notmuch-crypto-signature-good ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-black))))
-   `(notmuch-crypto-signature-good-key ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-black))))
-   `(notmuch-crypto-signature-unknown ((t (:foreground ,atom-one-dark-orange-1 :background ,atom-one-dark-black))))
+   `(notmuch-crypto-decryption ((t (:foreground ,atom-one-dark-purple :background ,atom-one-dark-level-3-color))))
+   `(notmuch-crypto-signature-bad ((t (:foreground ,atom-one-dark-red-1 :background ,atom-one-dark-level-3-color))))
+   `(notmuch-crypto-signature-good ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-level-3-color))))
+   `(notmuch-crypto-signature-good-key ((t (:foreground ,atom-one-dark-green :background ,atom-one-dark-level-3-color))))
+   `(notmuch-crypto-signature-unknown ((t (:foreground ,atom-one-dark-orange-1 :background ,atom-one-dark-level-3-color))))
    `(notmuch-hello-logo-background ((t (:inherit default))))
-   `(notmuch-message-summary-face ((t (:background ,atom-one-dark-black))))
-   `(notmuch-search-count ((t (:inherit default :foreground ,atom-one-dark-silver))))
+   `(notmuch-message-summary-face ((t (:background ,atom-one-dark-level-3-color))))
+   `(notmuch-search-count ((t (:inherit default :foreground ,atom-one-dark-ui-fg))))
    `(notmuch-search-date ((t (:inherit default :foreground ,atom-one-dark-purple))))
    `(notmuch-search-matching-authors ((t (:inherit default :foreground ,atom-one-dark-orange-2))))
    `(notmuch-search-non-matching-authors ((t (:inherit font-lock-comment-face :slant italic))))
@@ -464,15 +473,15 @@
    `(notmuch-tree-no-match-face ((t (:slant italic :weight light :inherit font-lock-comment-face))))
 
    ;; elfeed
-   `(elfeed-log-debug-level-face ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-green))))
-   `(elfeed-log-error-level-face ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-red-1))))
-   `(elfeed-log-info-level-face ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-blue))))
-   `(elfeed-log-warn-level-face ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-orange-1))))
+   `(elfeed-log-debug-level-face ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-green))))
+   `(elfeed-log-error-level-face ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-red-1))))
+   `(elfeed-log-info-level-face ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-blue))))
+   `(elfeed-log-warn-level-face ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-orange-1))))
    `(elfeed-search-date-face ((t (:foreground ,atom-one-dark-purple))))
    `(elfeed-search-feed-face ((t (:foreground ,atom-one-dark-orange-2))))
    `(elfeed-search-tag-face ((t (:foreground ,atom-one-dark-green))))
    `(elfeed-search-title-face ((t (:foreground ,atom-one-dark-mono-1))))
-   `(elfeed-search-unread-count-face ((t (:foreground ,atom-one-dark-silver))))
+   `(elfeed-search-unread-count-face ((t (:foreground ,atom-one-dark-ui-fg))))
 
    ;; perspective
    `(persp-selected-face ((t (:foreground ,atom-one-dark-blue))))
@@ -541,12 +550,12 @@
    `(spaceline-python-venv ((,class (:foreground ,atom-one-dark-purple))))
 
    ;; solaire mode
-   `(solaire-default-face ((,class (:inherit default :background ,atom-one-dark-black))))
-   `(solaire-minibuffer-face ((,class (:inherit default :background ,atom-one-dark-black))))
+   `(solaire-default-face ((,class (:inherit default :background ,atom-one-dark-level-3-color))))
+   `(solaire-minibuffer-face ((,class (:inherit default :background ,atom-one-dark-level-3-color))))
 
    ;; web-mode
    `(web-mode-doctype-face ((t (:inherit font-lock-comment-face))))
-   `(web-mode-error-face ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-red-1))))
+   `(web-mode-error-face ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-red-1))))
    `(web-mode-html-attr-equal-face ((t (:inherit default))))
    `(web-mode-html-attr-name-face ((t (:foreground ,atom-one-dark-orange-1))))
    `(web-mode-html-tag-bracket-face ((t (:inherit default))))
@@ -583,13 +592,13 @@
    `(gomoku-X ((t (:foreground ,atom-one-dark-green :weight bold))))
 
    ;; tabbar
-   `(tabbar-default ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-black))))
+   `(tabbar-default ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-level-3-color))))
    `(tabbar-highlight ((,class (:underline t))))
    `(tabbar-button ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg))))
    `(tabbar-button-highlight ((,class (:inherit 'tabbar-button :inverse-video t))))
    `(tabbar-modified ((,class (:inherit tabbar-button :foreground ,atom-one-dark-purple :weight light :slant italic))))
-   `(tabbar-unselected ((,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-black :slant italic :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
-   `(tabbar-unselected-modified ((,class (:inherit tabbar-modified :background ,atom-one-dark-black :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
+   `(tabbar-unselected ((,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-level-3-color :slant italic :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
+   `(tabbar-unselected-modified ((,class (:inherit tabbar-modified :background ,atom-one-dark-level-3-color :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
    `(tabbar-selected ((,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-bg :weight bold :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
    `(tabbar-selected-modified ((,class (:inherit tabbar-selected :foreground ,atom-one-dark-purple :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
 
@@ -603,9 +612,9 @@
 
    ;; regexp-builder
    `(reb-match-0 ((t (:background ,atom-one-dark-gray))))
-   `(reb-match-1 ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-purple :weight semi-bold))))
-   `(reb-match-2 ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-green :weight semi-bold))))
-   `(reb-match-3 ((t (:background ,atom-one-dark-black :foreground ,atom-one-dark-orange-2 :weight semi-bold))))
+   `(reb-match-1 ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-purple :weight semi-bold))))
+   `(reb-match-2 ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-green :weight semi-bold))))
+   `(reb-match-3 ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-orange-2 :weight semi-bold))))
 
    ;; desktop-entry
    `(desktop-entry-deprecated-keyword-face ((t (:inherit font-lock-warning-face))))
@@ -699,7 +708,7 @@
 
    ;; ansi-color
    `(ansi-color-names-vector
-     [,atom-one-dark-black ,atom-one-dark-red-1 ,atom-one-dark-green ,atom-one-dark-orange-2
+     [,atom-one-dark-bg ,atom-one-dark-red-1 ,atom-one-dark-green ,atom-one-dark-orange-2
       ,atom-one-dark-blue ,atom-one-dark-purple ,atom-one-dark-cyan ,atom-one-dark-fg])
    ))
 
