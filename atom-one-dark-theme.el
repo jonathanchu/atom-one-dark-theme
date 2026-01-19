@@ -686,6 +686,13 @@
    `(tab-bar-tab-inactive ((t (:background ,atom-one-dark-bg-hl :foreground ,atom-one-dark-fg))))
    `(tab-bar-tab          ((t (:background ,atom-one-dark-bg :foreground ,atom-one-dark-purple))))
    `(tab-bar              ((t (:background ,atom-one-dark-bg-hl))))
+
+   ;; tab-line-mode
+   `(tab-line ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-black :box (:line-width 1 :color ,atom-one-dark-black)))))
+   `(tab-line-tab-current ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg :box (:line-width 1 :color ,atom-one-dark-bg) :weight bold))))
+   `(tab-line-tab-inactive ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-black :box (:line-width 1 :color ,atom-one-dark-black)))))
+   `(tab-line-tab ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-black :box (:line-width 1 :color ,atom-one-dark-black)))))
+   `(tab-line-highlight ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg :box (:line-width 1 :color ,atom-one-dark-bg)))))
    ))
 
 (atom-one-dark-with-color-variables
