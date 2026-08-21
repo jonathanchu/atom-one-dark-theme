@@ -1,4 +1,4 @@
-;;; atom-one-dark-theme.el --- Atom One Dark color theme
+;;; atom-one-dark-theme.el --- Atom One Dark color theme  -*- lexical-binding: t; -*-
 
 ;; Copyright 2015-2019 Jonathan Chu
 
