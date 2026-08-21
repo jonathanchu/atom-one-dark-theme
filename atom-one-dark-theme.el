@@ -111,6 +111,14 @@
    `(font-lock-warning-face ((t (:foreground ,atom-one-dark-mono-3 :bold t))))
    `(font-lock-negation-char-face ((t (:foreground ,atom-one-dark-cyan :bold t))))
 
+   ;; Faces used by tree-sitter major modes.  The rest of the font-lock-*-face
+   ;; additions inherit usable colors already: function-call from function-name,
+   ;; variable-use and property-use from variable-name, regexp from string.
+   `(font-lock-number-face ((t (:foreground ,atom-one-dark-orange-1))))
+   `(font-lock-operator-face ((t (:foreground ,atom-one-dark-cyan))))
+   `(font-lock-punctuation-face ((t (:foreground ,atom-one-dark-mono-1))))
+   `(font-lock-escape-face ((t (:foreground ,atom-one-dark-cyan))))
+
    ;; mode-line
    `(mode-line ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-ui-fg :box (:color ,atom-one-dark-border :line-width 1)))))
    `(mode-line-buffer-id ((t (:weight bold))))
