@@ -1,6 +1,6 @@
 ;;; atom-one-dark-theme.el --- Atom One Dark color theme  -*- lexical-binding: t; -*-
 
-;; Copyright 2015-2019 Jonathan Chu
+;; Copyright 2015-2026 Jonathan Chu
 
 ;; Author: Jonathan Chu <me@jonathanchu.is>
 ;; URL: https://github.com/jonathanchu/atom-one-dark-theme
