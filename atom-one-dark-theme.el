@@ -262,7 +262,6 @@ hex values.  FRAME defaults to the selected frame."
    `(helm-grep-file ((t (:foreground ,atom-one-dark-fg))))
    `(helm-grep-finish ((t (:foreground ,atom-one-dark-green))))
    `(helm-grep-lineno ((t (:foreground ,atom-one-dark-mono-2))))
-   `(helm-grep-finish ((t (:foreground ,atom-one-dark-red-1))))
    `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
    `(helm-swoop-target-line-block-face ((t (:background ,atom-one-dark-mono-3 :foreground "#222222"))))
    `(helm-swoop-target-line-face ((t (:background ,atom-one-dark-mono-3 :foreground "#222222"))))
