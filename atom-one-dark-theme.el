@@ -376,7 +376,9 @@ hex values.  FRAME defaults to the selected frame."
    `(js2-jsdoc-value ((t (:foreground ,atom-one-dark-red-1))))
    `(js2-object-property ((t (:foreground ,atom-one-dark-red-1))))
 
-   ;; ediff
+   ;; ediff.  The fine/current diff backgrounds are deliberately off-palette:
+   ;; they need to read as red/green/blue washes behind ordinary buffer text,
+   ;; which no palette color provides.
    `(ediff-fine-diff-Ancestor                ((t (:background "#885555"))))
    `(ediff-fine-diff-A                       ((t (:background "#885555"))))
    `(ediff-fine-diff-B                       ((t (:background "#558855"))))
