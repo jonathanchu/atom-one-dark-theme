@@ -642,6 +642,14 @@
    `(org-document-info-keyword ((t (:inherit org-meta-line :underline t))))
    `(org-document-title ((t (:weight bold))))
    `(org-footnote ((t (:foreground ,atom-one-dark-cyan))))
+   `(org-level-1 ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
+   `(org-level-2 ((t (:foreground ,atom-one-dark-orange-2))))
+   `(org-level-3 ((t (:foreground ,atom-one-dark-purple))))
+   `(org-level-4 ((t (:foreground ,atom-one-dark-green))))
+   `(org-level-5 ((t (:foreground ,atom-one-dark-cyan))))
+   `(org-level-6 ((t (:foreground ,atom-one-dark-orange-1))))
+   `(org-level-7 ((t (:foreground ,atom-one-dark-silver))))
+   `(org-level-8 ((t (:foreground ,atom-one-dark-mono-2))))
    `(org-sexp-date ((t (:foreground ,atom-one-dark-cyan))))
 
    ;; calendar
