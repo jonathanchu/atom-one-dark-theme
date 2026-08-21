@@ -1,5 +1,5 @@
-[![MELPA](http://melpa.org/packages/atom-one-dark-theme-badge.svg)](http://melpa.org/#/atom-one-dark-theme)
-[![MELPA Stable](http://stable.melpa.org/packages/atom-one-dark-theme-badge.svg)](http://stable.melpa.org/#/atom-one-dark-theme)
+[![MELPA](https://melpa.org/packages/atom-one-dark-theme-badge.svg)](https://melpa.org/#/atom-one-dark-theme)
+[![MELPA Stable](https://stable.melpa.org/packages/atom-one-dark-theme-badge.svg)](https://stable.melpa.org/#/atom-one-dark-theme)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # Atom One Dark Theme for Emacs
@@ -18,7 +18,7 @@ popular modes. Pull requests are extremely welcomed! :)
 
 ### From Packages (MELPA)
 
-Make sure you have enabled the [MELPA](http://melpa.org/) package
+Make sure you have enabled the [MELPA](https://melpa.org/) package
 archive in your Emacs configuration.
 
 <kbd>m-x</kbd> `package-install` <kbd>RET</kbd> `atom-one-dark-theme`
@@ -51,4 +51,4 @@ to your Emacs config:
 ```
 
 ## Screenshots
-![Atom One Dark theme screenshot](http://i.imgur.com/qDnlEYc.png)
+![Atom One Dark theme screenshot](https://i.imgur.com/qDnlEYc.png)
