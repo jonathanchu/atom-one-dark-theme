@@ -786,15 +786,15 @@ non-nil or this command was called interactively."
   (when (or atom-one-dark-theme-force-faces-for-mode (called-interactively-p 'interactive))
     (atom-one-dark-with-color-variables
       (cond
-       ((member major-mode '(js2-mode))
+       ((derived-mode-p 'js2-mode)
         (face-remap-add-relative 'font-lock-constant-face :foreground atom-one-dark-orange-1)
         (face-remap-add-relative 'font-lock-doc-face '(:inherit (font-lock-comment-face)))
         (face-remap-add-relative 'font-lock-variable-name-face :foreground atom-one-dark-mono-1))
-       ((member major-mode '(html-mode))
+       ((derived-mode-p 'html-mode)
         (face-remap-add-relative 'font-lock-function-name-face :foreground atom-one-dark-red-1)
         (face-remap-add-relative 'font-lock-variable-name-face :foreground atom-one-dark-orange-1))))))
 
-(add-hook 'after-change-major-mode-hook 'atom-one-dark-theme-change-faces-for-mode)
+(add-hook 'after-change-major-mode-hook #'atom-one-dark-theme-change-faces-for-mode)
 
 (defvar atom-one-dark--palette-refreshed nil
   "Non-nil once the palette has been rebuilt against a real display.")
