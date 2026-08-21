@@ -30,8 +30,12 @@
 (deftheme atom-one-dark
   "Atom One Dark - An Emacs port of the Atom One Dark theme from Atom.io.")
 
-(defvar atom-one-dark-colors-alist
-  (let* ((256color  (eq (display-color-cells (selected-frame)) 256))
+(defun atom-one-dark--build-colors-alist (&optional frame)
+  "Return the Atom One Dark palette appropriate for FRAME.
+Terminals reporting exactly 256 colors get `color-NNN' names; every
+other display, including 24-bit terminals and graphical frames, gets
+hex values.  FRAME defaults to the selected frame."
+  (let* ((256color  (eq (display-color-cells (or frame (selected-frame))) 256))
          (colors `(("atom-one-dark-accent"        . "#528BFF")
                    ("atom-one-dark-fg"            . (if ,256color "color-248" "#ABB2BF"))
                    ("atom-one-dark-bg"            . (if ,256color "color-235" "#282C34"))
@@ -62,7 +66,9 @@
                    ("atom-one-dark-ui-fg"         . (if ,256color "color-247" "#9DA5B4"))
                    ("atom-one-dark-level-3-color" . (if ,256color "color-233" "#21252B"))
                    ("atom-one-dark-border"        . (if ,256color "color-232" "#181A1F")))))
-    colors)
+    colors))
+
+(defvar atom-one-dark-colors-alist (atom-one-dark--build-colors-alist)
   "List of Atom One Dark colors.")
 
 (defmacro atom-one-dark-with-color-variables (&rest body)
@@ -783,6 +789,30 @@ Current modes, and their faces, impacted by this variable:
         (face-remap-add-relative 'font-lock-variable-name-face :foreground atom-one-dark-orange-1))))))
 
 (add-hook 'after-change-major-mode-hook 'atom-one-dark-theme-change-faces-for-mode)
+
+(defvar atom-one-dark--palette-refreshed nil
+  "Non-nil once the palette has been rebuilt against a real display.")
+
+;; Under a daemon the theme is loaded before any display exists, so
+;; `display-color-cells' reports 0 and the hex palette is baked in even when the
+;; first client turns out to be a 256-color terminal -- which is why the
+;; background came out wrong in emacsclient.  Rebuild the palette against the
+;; first client frame and re-apply, but only when the guess actually turned out
+;; to be wrong, so that a correct guess never disturbs faces the user set up
+;; after loading the theme.
+(defun atom-one-dark--refresh-palette ()
+  "Re-apply the theme if the palette built at load time suits no real display."
+  (remove-hook 'server-after-make-frame-hook #'atom-one-dark--refresh-palette)
+  (unless atom-one-dark--palette-refreshed
+    (setq atom-one-dark--palette-refreshed t)
+    (let ((colors (atom-one-dark--build-colors-alist (selected-frame))))
+      (when (and (memq 'atom-one-dark custom-enabled-themes)
+                 (not (equal colors atom-one-dark-colors-alist)))
+        (setq atom-one-dark-colors-alist colors)
+        (load-theme 'atom-one-dark t)))))
+
+(when (and (daemonp) (not atom-one-dark--palette-refreshed))
+  (add-hook 'server-after-make-frame-hook #'atom-one-dark--refresh-palette))
 
 ;;;###autoload
 (and load-file-name
