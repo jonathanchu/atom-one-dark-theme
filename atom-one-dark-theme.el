@@ -162,8 +162,8 @@ hex values.  FRAME defaults to the selected frame."
    `(centaur-tabs-unselected-modified ((t (:background ,atom-one-dark-level-3-color :weight light
                                                        :foreground ,atom-one-dark-blue))))
    `(centaur-tabs-active-bar-face ((t (:background ,atom-one-dark-accent))))
-   `(centaur-tabs-modified-marker-selected ((t (:inherit centaur-tabs-selected :foreground,atom-one-dark-accent))))
-   `(centaur-tabs-modified-marker-unselected ((t (:inherit centaur-tabs-unselected :foreground,atom-one-dark-accent))))
+   `(centaur-tabs-modified-marker-selected ((t (:inherit centaur-tabs-selected :foreground ,atom-one-dark-accent))))
+   `(centaur-tabs-modified-marker-unselected ((t (:inherit centaur-tabs-unselected :foreground ,atom-one-dark-accent))))
 
    ;; company-mode
    `(company-tooltip ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg-1))))
@@ -372,7 +372,7 @@ hex values.  FRAME defaults to the selected frame."
    `(js2-function-param ((t (:foreground ,atom-one-dark-mono-1))))
    `(js2-jsdoc-tag ((t (:foreground ,atom-one-dark-purple))))
    `(js2-jsdoc-type ((t (:foreground ,atom-one-dark-orange-2))))
-   `(js2-jsdoc-value((t (:foreground ,atom-one-dark-red-1))))
+   `(js2-jsdoc-value ((t (:foreground ,atom-one-dark-red-1))))
    `(js2-object-property ((t (:foreground ,atom-one-dark-red-1))))
 
    ;; ediff
@@ -570,7 +570,7 @@ hex values.  FRAME defaults to the selected frame."
    ;; spaceline
    `(spaceline-flycheck-error  ((,class (:foreground ,atom-one-dark-red-1))))
    `(spaceline-flycheck-info   ((,class (:foreground ,atom-one-dark-green))))
-   `(spaceline-flycheck-warning((,class (:foreground ,atom-one-dark-orange-1))))
+   `(spaceline-flycheck-warning ((,class (:foreground ,atom-one-dark-orange-1))))
    `(spaceline-python-venv ((,class (:foreground ,atom-one-dark-purple))))
 
    ;; solaire mode
