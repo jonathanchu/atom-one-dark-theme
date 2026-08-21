@@ -97,7 +97,8 @@
    `(tooltip ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg-1 :inherit variable-pitch))))
 
    `(font-lock-builtin-face ((t (:foreground ,atom-one-dark-cyan))))
-   `(font-lock-comment-face ((t (:foreground ,atom-one-dark-mono-3 :slant italic))))
+   `(font-lock-comment-face ((((supports :slant italic)) (:foreground ,atom-one-dark-mono-3 :slant italic))
+                             (t (:foreground ,atom-one-dark-mono-3))))
    `(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
    `(font-lock-doc-face ((t (:inherit (font-lock-string-face)))))
    `(font-lock-function-name-face ((t (:foreground ,atom-one-dark-blue))))
@@ -266,7 +267,8 @@
    `(ivy-minibuffer-match-face-4 ((t (:inherit ivy-minibuffer-match-face-2 :background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-orange-2 :weight semi-bold))))
    `(ivy-minibuffer-match-highlight ((t (:inherit ivy-current-match))))
    `(ivy-modified-buffer ((t (:inherit default :foreground ,atom-one-dark-orange-1))))
-   `(ivy-virtual ((t (:inherit font-lock-builtin-face :slant italic))))
+   `(ivy-virtual ((((supports :slant italic)) (:inherit font-lock-builtin-face :slant italic))
+                  (t (:inherit font-lock-builtin-face))))
 
    ;; counsel
    `(counsel-key-binding ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
@@ -302,16 +304,19 @@
 
    ;; man
    `(Man-overstrike ((t (:inherit font-lock-type-face :weight bold))))
-   `(Man-underline ((t (:inherit font-lock-keyword-face :slant italic :weight bold))))
+   `(Man-underline ((((supports :slant italic)) (:inherit font-lock-keyword-face :slant italic :weight bold))
+                    (t (:inherit font-lock-keyword-face :weight bold))))
 
    ;; woman
    `(woman-bold ((t (:inherit font-lock-type-face :weight bold))))
-   `(woman-italic ((t (:inherit font-lock-keyword-face :slant italic :weight bold))))
+   `(woman-italic ((((supports :slant italic)) (:inherit font-lock-keyword-face :slant italic :weight bold))
+                   (t (:inherit font-lock-keyword-face :weight bold))))
 
    ;; dictionary
    `(dictionary-button-face ((t (:inherit widget-button))))
    `(dictionary-reference-face ((t (:inherit font-lock-type-face :weight bold))))
-   `(dictionary-word-entry-face ((t (:inherit font-lock-keyword-face :slant italic :weight bold))))
+   `(dictionary-word-entry-face ((((supports :slant italic)) (:inherit font-lock-keyword-face :slant italic :weight bold))
+                                 (t (:inherit font-lock-keyword-face :weight bold))))
 
    ;; erc
    `(erc-error-face ((t (:inherit error))))
@@ -438,16 +443,19 @@
    `(message-cited-text ((t (:foreground ,atom-one-dark-green))))
    `(message-header-cc ((t (:foreground ,atom-one-dark-orange-1 :weight bold))))
    `(message-header-name ((t (:foreground ,atom-one-dark-purple))))
-   `(message-header-newsgroups ((t (:foreground ,atom-one-dark-orange-2 :weight bold :slant italic))))
+   `(message-header-newsgroups ((((supports :slant italic)) (:foreground ,atom-one-dark-orange-2 :weight bold :slant italic))
+                                (t (:foreground ,atom-one-dark-orange-2 :weight bold))))
    `(message-header-other ((t (:foreground ,atom-one-dark-red-1))))
    `(message-header-subject ((t (:foreground ,atom-one-dark-blue))))
    `(message-header-to ((t (:foreground ,atom-one-dark-orange-2 :weight bold))))
    `(message-header-xheader ((t (:foreground ,atom-one-dark-ui-fg))))
    `(message-mml ((t (:foreground ,atom-one-dark-purple))))
-   `(message-separator ((t (:foreground ,atom-one-dark-mono-3 :slant italic))))
+   `(message-separator ((((supports :slant italic)) (:foreground ,atom-one-dark-mono-3 :slant italic))
+                        (t (:foreground ,atom-one-dark-mono-3))))
 
    ;; epa
-   `(epa-field-body ((t (:foreground ,atom-one-dark-blue :slant italic))))
+   `(epa-field-body ((((supports :slant italic)) (:foreground ,atom-one-dark-blue :slant italic))
+                     (t (:foreground ,atom-one-dark-blue))))
    `(epa-field-name ((t (:foreground ,atom-one-dark-cyan :weight bold))))
 
    ;; notmuch
@@ -461,7 +469,8 @@
    `(notmuch-search-count ((t (:inherit default :foreground ,atom-one-dark-ui-fg))))
    `(notmuch-search-date ((t (:inherit default :foreground ,atom-one-dark-purple))))
    `(notmuch-search-matching-authors ((t (:inherit default :foreground ,atom-one-dark-orange-2))))
-   `(notmuch-search-non-matching-authors ((t (:inherit font-lock-comment-face :slant italic))))
+   `(notmuch-search-non-matching-authors ((((supports :slant italic)) (:inherit font-lock-comment-face :slant italic))
+                                          (t (:inherit font-lock-comment-face))))
    `(notmuch-tag-added ((t (:underline t))))
    `(notmuch-tag-deleted ((t (:strike-through ,atom-one-dark-red-2))))
    `(notmuch-tag-face ((t (:foreground ,atom-one-dark-green))))
@@ -470,7 +479,8 @@
    `(notmuch-tree-match-date-face ((t (:inherit notmuch-search-date))))
    `(notmuch-tree-match-face ((t (:weight semi-bold))))
    `(notmuch-tree-match-tag-face ((t (:inherit notmuch-tag-face))))
-   `(notmuch-tree-no-match-face ((t (:slant italic :weight light :inherit font-lock-comment-face))))
+   `(notmuch-tree-no-match-face ((((supports :slant italic)) (:slant italic :weight light :inherit font-lock-comment-face))
+                                 (t (:weight light :inherit font-lock-comment-face))))
 
    ;; elfeed
    `(elfeed-log-debug-level-face ((t (:background ,atom-one-dark-level-3-color :foreground ,atom-one-dark-green))))
@@ -519,7 +529,8 @@
    `(show-paren-mismatch ((,class (:foreground ,atom-one-dark-red-1 :inherit bold :underline t))))
 
    ;; sh-mode
-   `(sh-heredoc ((t (:inherit font-lock-string-face :slant italic))))
+   `(sh-heredoc ((((supports :slant italic)) (:inherit font-lock-string-face :slant italic))
+                 (t (:inherit font-lock-string-face))))
 
    ;; cider
    `(cider-fringe-good-face ((t (:foreground ,atom-one-dark-green))))
@@ -596,8 +607,10 @@
    `(tabbar-highlight ((,class (:underline t))))
    `(tabbar-button ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg))))
    `(tabbar-button-highlight ((,class (:inherit 'tabbar-button :inverse-video t))))
-   `(tabbar-modified ((,class (:inherit tabbar-button :foreground ,atom-one-dark-purple :weight light :slant italic))))
-   `(tabbar-unselected ((,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-level-3-color :slant italic :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
+   `(tabbar-modified ((((,@class (supports :slant italic))) (:inherit tabbar-button :foreground ,atom-one-dark-purple :weight light :slant italic))
+                      (,class (:inherit tabbar-button :foreground ,atom-one-dark-purple :weight light))))
+   `(tabbar-unselected ((((,@class (supports :slant italic))) (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-level-3-color :slant italic :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))
+                        (,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-level-3-color :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
    `(tabbar-unselected-modified ((,class (:inherit tabbar-modified :background ,atom-one-dark-level-3-color :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
    `(tabbar-selected ((,class (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-bg :weight bold :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
    `(tabbar-selected-modified ((,class (:inherit tabbar-selected :foreground ,atom-one-dark-purple :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))))
