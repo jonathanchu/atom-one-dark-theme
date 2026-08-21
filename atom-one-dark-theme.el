@@ -60,6 +60,7 @@ hex values.  FRAME defaults to the selected frame."
                    ("atom-one-dark-red-2"         . "#BE5046")
                    ("atom-one-dark-orange-1"      . "#D19A66")
                    ("atom-one-dark-orange-2"      . "#E5C07B")
+                   ("atom-one-dark-magenta"       . "#FD5FF1")
                    ("atom-one-dark-gray"          . (if ,256color "color-237" "#3E4451"))
                    ("atom-one-dark-silver"        . (if ,256color "color-247" "#9DA5B4"))
                    ("atom-one-dark-black"         . (if ,256color "color-233" "#21252B"))
@@ -216,7 +217,7 @@ hex values.  FRAME defaults to the selected frame."
    ;; dired-mode
    '(dired-directory ((t (:inherit (font-lock-keyword-face)))))
    '(dired-flagged ((t (:inherit (diff-hl-delete)))))
-   '(dired-symlink ((t (:foreground "#FD5FF1"))))
+   `(dired-symlink ((t (:foreground ,atom-one-dark-magenta))))
 
    ;; dired-async
    `(dired-async-failures ((t (:inherit error))))
@@ -310,7 +311,7 @@ hex values.  FRAME defaults to the selected frame."
    `(eshell-ls-executable ((t (:foreground ,atom-one-dark-green :weight bold))))
    `(eshell-ls-missing ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
    `(eshell-ls-product ((t (:foreground ,atom-one-dark-orange-2))))
-   `(eshell-ls-special ((t (:foreground "#FD5FF1" :weight bold))))
+   `(eshell-ls-special ((t (:foreground ,atom-one-dark-magenta :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,atom-one-dark-cyan :weight bold))))
    `(eshell-ls-unreadable ((t (:foreground ,atom-one-dark-mono-1))))
    `(eshell-prompt ((t (:inherit minibuffer-prompt))))
