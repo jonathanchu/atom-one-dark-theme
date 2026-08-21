@@ -114,8 +114,8 @@ hex values.  FRAME defaults to the selected frame."
    `(font-lock-type-face ((t (:foreground ,atom-one-dark-orange-2))))
    `(font-lock-constant-face ((t (:foreground ,atom-one-dark-cyan))))
    `(font-lock-variable-name-face ((t (:foreground ,atom-one-dark-red-1))))
-   `(font-lock-warning-face ((t (:foreground ,atom-one-dark-mono-3 :bold t))))
-   `(font-lock-negation-char-face ((t (:foreground ,atom-one-dark-cyan :bold t))))
+   `(font-lock-warning-face ((t (:foreground ,atom-one-dark-mono-3 :weight bold))))
+   `(font-lock-negation-char-face ((t (:foreground ,atom-one-dark-cyan :weight bold))))
 
    ;; Faces used by tree-sitter major modes.  The rest of the font-lock-*-face
    ;; additions inherit usable colors already: function-call from function-name,
@@ -344,7 +344,7 @@ hex values.  FRAME defaults to the selected frame."
    `(jabber-roster-user-xa ((t (:foreground ,atom-one-dark-red-2))))
    `(jabber-roster-user-dnd ((t (:foreground ,atom-one-dark-purple))))
    `(jabber-roster-user-chatty ((t (:foreground ,atom-one-dark-orange-2))))
-   `(jabber-roster-user-error ((t (:foreground ,atom-one-dark-red-1 :bold t))))
+   `(jabber-roster-user-error ((t (:foreground ,atom-one-dark-red-1 :weight bold))))
    `(jabber-roster-user-offline ((t (:foreground ,atom-one-dark-mono-3))))
    `(jabber-chat-prompt-local ((t (:foreground ,atom-one-dark-blue))))
    `(jabber-chat-prompt-foreign ((t (:foreground ,atom-one-dark-orange-2))))
