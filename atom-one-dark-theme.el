@@ -755,17 +755,19 @@ hex values.  FRAME defaults to the selected frame."
       ,atom-one-dark-blue ,atom-one-dark-purple ,atom-one-dark-cyan ,atom-one-dark-fg])
    ))
 
-(defvar atom-one-dark-theme-force-faces-for-mode t
-  "If t, atom-one-dark-theme will use Face Remapping to alter the theme faces for
-the current buffer based on its mode in an attempt to mimick the Atom One Dark
-Theme from Atom.io as best as possible.
-The reason this is required is because some modes (html-mode, jyaml-mode, ...)
-do not provide the necessary faces to do theming without conflicting with other
-modes.
-Current modes, and their faces, impacted by this variable:
-* js2-mode: font-lock-constant-face, font-lock-doc-face, font-lock-variable-name-face
-* html-mode: font-lock-function-name-face, font-lock-variable-name-face
-")
+(defcustom atom-one-dark-theme-force-faces-for-mode t
+  "Non-nil means remap faces per major mode to better match Atom One Dark.
+Some modes (`html-mode', `jyaml-mode', ...) do not provide the faces
+needed to theme them without conflicting with other modes, so the theme
+alters them per buffer using Face Remapping instead.
+
+Modes, and the faces, impacted by this variable:
+* `js2-mode': `font-lock-constant-face', `font-lock-doc-face',
+  `font-lock-variable-name-face'
+* `html-mode': `font-lock-function-name-face',
+  `font-lock-variable-name-face'"
+  :type 'boolean
+  :group 'faces)
 
 ;; Many modes in Emacs do not define their own faces and instead use standard Emacs faces when it comes to theming.
 ;; That being said, to have a real "Atom One Dark Theme" for Emacs, we need to work around this so that these themes look
@@ -777,6 +779,9 @@ Current modes, and their faces, impacted by this variable:
 ;; mode they see a different face.  That being said, you can set the `atom-one-dark-theme-force-faces-for-mode` variable to
 ;; `nil` to disable this feature.
 (defun atom-one-dark-theme-change-faces-for-mode ()
+  "Remap faces in the current buffer to better suit its major mode.
+Does nothing unless `atom-one-dark-theme-force-faces-for-mode' is
+non-nil or this command was called interactively."
   (interactive)
   (when (or atom-one-dark-theme-force-faces-for-mode (called-interactively-p 'interactive))
     (atom-one-dark-with-color-variables
