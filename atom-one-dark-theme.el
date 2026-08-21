@@ -162,8 +162,8 @@ hex values.  FRAME defaults to the selected frame."
    `(centaur-tabs-unselected-modified ((t (:background ,atom-one-dark-level-3-color :weight light
                                                        :foreground ,atom-one-dark-blue))))
    `(centaur-tabs-active-bar-face ((t (:background ,atom-one-dark-accent))))
-   `(centaur-tabs-modified-marker-selected ((t (:inherit 'centaur-tabs-selected :foreground,atom-one-dark-accent))))
-   `(centaur-tabs-modified-marker-unselected ((t (:inherit 'centaur-tabs-unselected :foreground,atom-one-dark-accent))))
+   `(centaur-tabs-modified-marker-selected ((t (:inherit centaur-tabs-selected :foreground,atom-one-dark-accent))))
+   `(centaur-tabs-modified-marker-unselected ((t (:inherit centaur-tabs-unselected :foreground,atom-one-dark-accent))))
 
    ;; company-mode
    `(company-tooltip ((t (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg-1))))
@@ -620,7 +620,7 @@ hex values.  FRAME defaults to the selected frame."
    `(tabbar-default ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-level-3-color))))
    `(tabbar-highlight ((,class (:underline t))))
    `(tabbar-button ((,class (:foreground ,atom-one-dark-fg :background ,atom-one-dark-bg))))
-   `(tabbar-button-highlight ((,class (:inherit 'tabbar-button :inverse-video t))))
+   `(tabbar-button-highlight ((,class (:inherit tabbar-button :inverse-video t))))
    `(tabbar-modified ((((,@class (supports :slant italic))) (:inherit tabbar-button :foreground ,atom-one-dark-purple :weight light :slant italic))
                       (,class (:inherit tabbar-button :foreground ,atom-one-dark-purple :weight light))))
    `(tabbar-unselected ((((,@class (supports :slant italic))) (:inherit tabbar-default :foreground ,atom-one-dark-fg :background ,atom-one-dark-level-3-color :slant italic :underline nil :box (:line-width 1 :color ,atom-one-dark-bg)))
