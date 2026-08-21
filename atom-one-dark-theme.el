@@ -689,8 +689,8 @@ hex values.  FRAME defaults to the selected frame."
 
    ;; realgud
    `(realgud-overlay-arrow1        ((t (:foreground ,atom-one-dark-green))))
-   `(realgud-overlay-arrow3        ((t (:foreground ,atom-one-dark-orange-1))   `(realgud-overlay-arrow2        ((t (:foreground ,atom-one-dark-orange-2))))
-                                    ))
+   `(realgud-overlay-arrow2        ((t (:foreground ,atom-one-dark-orange-2))))
+   `(realgud-overlay-arrow3        ((t (:foreground ,atom-one-dark-orange-1))))
    '(realgud-bp-enabled-face       ((t (:inherit (error)))))
    `(realgud-bp-disabled-face      ((t (:inherit (secondary-selection)))))
    `(realgud-bp-line-enabled-face  ((t (:box (:color ,atom-one-dark-red-1)))))
