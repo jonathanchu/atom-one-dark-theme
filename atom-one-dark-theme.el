@@ -742,7 +742,7 @@ Current modes, and their faces, impacted by this variable:
 ;; `nil` to disable this feature.
 (defun atom-one-dark-theme-change-faces-for-mode ()
   (interactive)
-  (when (or atom-one-dark-theme-force-faces-for-mode (called-interactively-p))
+  (when (or atom-one-dark-theme-force-faces-for-mode (called-interactively-p 'interactive))
     (atom-one-dark-with-color-variables
       (cond
        ((member major-mode '(js2-mode))
