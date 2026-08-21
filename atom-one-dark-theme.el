@@ -4,7 +4,7 @@
 
 ;; Author: Jonathan Chu <me@jonathanchu.is>
 ;; URL: https://github.com/jonathanchu/atom-one-dark-theme
-;; Version: 0.4.1
+;; Version: 0.5.0
 ;; Keywords: faces
 
 ;; This file is not part of GNU Emacs.
