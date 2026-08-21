@@ -175,8 +175,8 @@ hex values.  FRAME defaults to the selected frame."
    `(company-tooltip-common-selection ((t (:foreground ,atom-one-dark-orange-2 :background ,atom-one-dark-gray))))
    `(company-preview ((t (:background ,atom-one-dark-bg))))
    `(company-preview-common ((t (:foreground ,atom-one-dark-orange-2 :background ,atom-one-dark-bg))))
-   `(company-scrollbar-fg ((t (:background ,atom-one-dark-mono-1))))
-   `(company-scrollbar-bg ((t (:background ,atom-one-dark-bg-1))))
+   `(company-tooltip-scrollbar-thumb ((t (:background ,atom-one-dark-mono-1))))
+   `(company-tooltip-scrollbar-track ((t (:background ,atom-one-dark-bg-1))))
    `(company-template-field ((t (:inherit highlight))))
 
    ;; doom-modeline
