@@ -102,3 +102,11 @@ gives you the terminal palette rather than the graphical one.
 
 ## Screenshots
 ![Atom One Dark theme screenshot](https://i.imgur.com/qDnlEYc.png)
+
+## License
+
+Distributed under the terms of the [GNU General Public License][gpl],
+either version 3 or (at your option) any later version. See
+[LICENSE](LICENSE) for the full text.
+
+[gpl]: https://www.gnu.org/licenses/gpl-3.0
