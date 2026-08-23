@@ -23,6 +23,18 @@ archive in your Emacs configuration.
 
 <kbd>m-x</kbd> `package-install` <kbd>RET</kbd> `atom-one-dark-theme`
 
+### With `use-package`
+
+If you install packages declaratively, `use-package` handles both the
+install and the load:
+
+```elisp
+(use-package atom-one-dark-theme
+  :ensure t
+  :config
+  (load-theme 'atom-one-dark t))
+```
+
 ### Manual
 
 First, clone this repo:
