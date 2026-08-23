@@ -62,6 +62,94 @@ to your Emacs config:
 (load-theme 'atom-one-dark t)
 ```
 
+## Mode Support
+
+Beyond the core font-lock faces — including the newer ones used by the
+tree-sitter major modes — the theme styles roughly 76 packages and
+built-in modes.
+
+<details>
+<summary>Full list</summary>
+
+* `ace-jump`
+* `ace-window`
+* `ansi-color`
+* `calendar`
+* `centaur-tabs`
+* `cider`
+* `company-mode`
+* `compilation`
+* `counsel`
+* `custom`
+* `desktop-entry`
+* `dictionary`
+* `diff-hl`
+* `dired-async`
+* `dired-mode`
+* `doom-modeline`
+* `ediff`
+* `elfeed`
+* `elixir`
+* `epa`
+* `erc`
+* `eshell`
+* `eww`
+* `fill-column-indicator`
+* `flx-ido`
+* `flycheck`
+* `flymake`
+* `flyspell`
+* font-latex (AUCTeX)
+* `git-commit`
+* `git-gutter`
+* `gomoku`
+* `gud`
+* `guix`
+* `helm`
+* `hlinum`
+* `ido`
+* `isearch`
+* `ivy`
+* `jabber`
+* `js2-mode`
+* `line-number`
+* `linum`
+* `lispy`
+* `lispyville`
+* `magit`
+* `man`
+* `message`
+* `mode-line`
+* `notmuch`
+* `nxml`
+* `org-mode`
+* `perspective`
+* `powerline`
+* `rainbow-delimiters`
+* `rbenv`
+* `realgud`
+* `regexp-builder`
+* `rmsbolt`
+* `rpm-spec-mode`
+* `ruler-mode`
+* `sh-mode`
+* `show-paren`
+* `sly`
+* `smartparens`
+* `solaire-mode`
+* `spaceline`
+* `swiper`
+* `tab-bar-mode`
+* `tab-line-mode`
+* `tabbar`
+* `tetris`
+* `undo-tree`
+* `web-mode`
+* `window-divider`
+* `woman`
+
+</details>
+
 ## Customization
 
 ### Per-mode face remapping
