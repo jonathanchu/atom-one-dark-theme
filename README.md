@@ -74,5 +74,31 @@ If you would rather see the same faces in every mode, disable it:
 (setq atom-one-dark-theme-force-faces-for-mode nil)
 ```
 
+## Terminal Support
+
+The theme ships two palettes and picks one per display. Terminals that
+report exactly 256 colors get `color-NNN` values chosen to sit closest
+to the intended shades; graphical frames and 24-bit terminals get the
+real hex values.
+
+If Emacs looks noticeably worse in your terminal than in the GUI, your
+terminal is probably not advertising 256 colors. Add this to your
+`.bashrc` or `.zshrc`, then start Emacs again:
+
+```console
+export TERM=xterm-256color
+```
+
+For fish, the equivalent in `config.fish` is:
+
+```console
+set -x TERM xterm-256color
+```
+
+Under a daemon the theme is loaded before any display exists, so it
+rebuilds the palette against the first client frame and re-applies
+itself. Starting `emacsclient` in a terminal after `emacs --daemon`
+gives you the terminal palette rather than the graphical one.
+
 ## Screenshots
 ![Atom One Dark theme screenshot](https://i.imgur.com/qDnlEYc.png)
