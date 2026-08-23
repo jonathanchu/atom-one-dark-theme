@@ -50,5 +50,29 @@ to your Emacs config:
 (load-theme 'atom-one-dark t)
 ```
 
+## Customization
+
+### Per-mode face remapping
+
+A few modes (notably `html-mode` and `js2-mode`) do not define faces of
+their own and instead reuse the standard font-lock faces, which makes
+them impossible to theme without affecting every other mode. To work
+around this, the theme remaps a small number of faces buffer-locally
+based on the major mode:
+
+| Mode | Remapped faces |
+| --- | --- |
+| `js2-mode` | `font-lock-constant-face`, `font-lock-doc-face`, `font-lock-variable-name-face` |
+| `html-mode` | `font-lock-function-name-face`, `font-lock-variable-name-face` |
+
+Modes derived from these are remapped as well, so `mhtml-mode` (the
+default major mode for HTML files) and `js2-jsx-mode` are covered too.
+
+If you would rather see the same faces in every mode, disable it:
+
+```elisp
+(setq atom-one-dark-theme-force-faces-for-mode nil)
+```
+
 ## Screenshots
 ![Atom One Dark theme screenshot](https://i.imgur.com/qDnlEYc.png)
