@@ -103,6 +103,18 @@ gives you the terminal palette rather than the graphical one.
 ## Screenshots
 ![Atom One Dark theme screenshot](https://i.imgur.com/qDnlEYc.png)
 
+## Contributing
+
+Bug reports and pull requests are welcome on the [issue tracker][issues].
+
+The theme is a single file, `atom-one-dark-theme.el`. Faces are grouped
+by the package they belong to, in one `custom-theme-set-faces` form, and
+each face draws its colors from the palette rather than hard-coding hex
+values. Adding support for a mode usually means appending one more
+group in the same style.
+
+[issues]: https://github.com/jonathanchu/atom-one-dark-theme/issues
+
 ## License
 
 Distributed under the terms of the [GNU General Public License][gpl],
