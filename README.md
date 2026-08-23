@@ -115,6 +115,11 @@ group in the same style.
 
 [issues]: https://github.com/jonathanchu/atom-one-dark-theme/issues
 
+## Contributors
+
+This theme is the work of many people. See [AUTHORS](AUTHORS) for the
+full list, and thank you to everyone who has sent a patch.
+
 ## License
 
 Distributed under the terms of the [GNU General Public License][gpl],
