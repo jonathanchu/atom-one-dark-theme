@@ -201,7 +201,7 @@ itself. Starting `emacsclient` in a terminal after `emacs --daemon`
 gives you the terminal palette rather than the graphical one.
 
 ## Screenshots
-![Atom One Dark theme screenshot](https://i.imgur.com/qDnlEYc.png)
+![Atom One Dark theme screenshot](screenshot-atom-one-dark-theme.png)
 
 ## Contributing
 
